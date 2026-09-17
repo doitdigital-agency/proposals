@@ -1253,14 +1253,14 @@
   .chan li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ink)}
   .slide.ink .chan li{color:rgba(244,244,243,0.72)}.slide.ink .chan li::before{background:#F4F4F3}
   .slide.ink .chan h4{color:#F4F4F3}
-  .pk2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px;align-items:stretch}
-  .pk{padding:22px 26px;display:flex;flex-direction:column}
+  .pk2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;align-items:stretch}
+  .pk{padding:18px 24px;display:flex;flex-direction:column}
   .pk .k{font-size:12.5px}
   .pk h3{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.025em;line-height:1.1;margin-top:8px}
   .pk .pr{font-family:var(--disp);font-weight:600;font-size:40px;letter-spacing:-0.04em;line-height:1;margin-top:12px}
   .pk .pr span{font-family:var(--code);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);margin-left:8px;font-weight:400}
   .pk .sub{font-size:15px;color:var(--silver);margin-top:8px;line-height:1.45}
-  .pk ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px}
+  .pk ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:5px}
   .pk li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.45;color:var(--silver)}
   .pk li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ink)}
   .pk li.plus{color:var(--fg);font-weight:500}
@@ -1278,7 +1278,10 @@
   .slide.ink .pk:not(.feat) li,.slide.ink .pk:not(.feat) .sub{color:rgba(244,244,243,0.72)}
   .slide.ink .pk:not(.feat) li::before{background:#F4F4F3}
   .slide.ink .pk:not(.feat) .meta{color:rgba(244,244,243,0.5);border-top-color:rgba(255,255,255,0.14)}
-  .scope3b.ao{grid-template-columns:1fr 1fr 1.3fr}
+  .scope3b.ao{grid-template-columns:1fr 1.15fr 1.3fr}
+  .scope3b.ao .blk{padding:14px 18px}
+  .scope3b.ao .xlist{grid-template-columns:1fr 1fr;gap:6px 14px}
+  .scope3b.ao .chk{gap:6px}
   .pkt{display:flex;gap:8px;margin-bottom:4px}
   .pkt button{font-family:inherit;font-size:13.5px;font-weight:600;padding:9px 14px;border-radius:999px;border:1px solid var(--hairline);background:var(--lift);color:var(--fg);cursor:pointer}
   .pkt button.on{background:var(--ink);color:#F4F4F3;border-color:var(--ink)}
@@ -1300,6 +1303,24 @@
   .inv2 .rec .big{font-size:52px}
   .inv2 .rec .inc{grid-template-columns:1fr}
   .inv2 .tcol .bd{font-size:14.5px}
+  /* v1.1: investment slide fits 1080 */
+  .inv2 .rec .big{font-size:42px;white-space:nowrap}
+  .inv2 .rec .big span{font-size:11px}
+  .inv2 .rec{padding:18px 22px}
+  .inv2 .rec .inc{gap:5px;margin-top:10px}
+  .inv2 .rec .tl2{font-size:14.5px;margin-top:8px}
+  .inv2 .rec .why{font-size:14.5px;margin-top:12px}
+  .inv2 .tcol{gap:10px}
+  .inv2 .tcol .bd{padding:12px 16px;font-size:14px}
+  .inv2{margin-top:14px}
+  /* v1.2: guarantees as a row under the two packages; trims for 8 and 10 */
+  .inv2{grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+  .inv2 .tcol{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .inv2 .tcol .bd{padding:12px 16px;font-size:14px;line-height:1.4}
+  .inv2 .rec .inc{grid-template-columns:1fr 1fr;gap:5px 18px}
+  section[data-title="The quarterly briefing funnel"] .stagepanel{min-height:480px}
+  section[data-title="The quarterly briefing funnel"] .sec-lead{font-size:18px}
+  section[data-title="Our own content evidence"] .oftx{font-size:15px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -1320,7 +1341,7 @@
     <div class="wrap cover">
       <div class="lockup reveal"><div class="mk">did<span class="dot">.</span></div><span class="x">&times;</span><img class="ao" src="ao-icon.svg" alt="AOCyber"></div>
       <p class="eyebrow reveal">The AOCyber Voice System</p>
-      <h1 class="grad reveal">Turn Justin Donnaruma's expertise into the voice enterprise buyers trust<span class="stop">.</span></h1>
+      <h1 class="grad reveal">Make Justin Donnaruma the voice enterprise buyers trust<span class="stop">.</span></h1>
       <p class="lead reveal">Ninety days. One founder voice. Twelve posts a month. A repeatable system for reaching the CISOs and IT leaders who buy AOCore.</p>
       <div class="cover-bullets reveal"><span>12 LinkedIn posts per month</span><span>Two recorded interviews per month</span><span>One founder voice</span><span>No writing required from Justin</span></div>
       <p class="cover-meta reveal">Prepared for <b>Ravi Jackson and Justin Mott, AOCyber</b><br>Prepared by <b>Nas Vou, Do It Digital</b> · 17 September 2026</p>
@@ -1486,7 +1507,7 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="n">08</span>The quarterly briefing funnel</p>
       <h2 class="sec-head grad reveal">One focused campaign. Five stages. A clear next&nbsp;step<span class="stop">.</span></h2>
-      <p class="sec-lead reveal">Five posts over five weeks, each with one job. Click a stage to read the example post. The same structure works for a CISO briefing, an install story, the university collaboration or a new AOCore capability.</p>
+      <p class="sec-lead reveal">Five posts over five weeks, each with one job. Click a stage to read the example post. The same structure works for a CISO briefing, an install story or a new AOCore capability.</p>
       <div class="track reveal"><i></i><i></i><i></i><i></i><i></i></div>
       <div class="stages reveal" role="tablist">
         <button class="stg active" data-stage="0" role="tab"><span class="k">01 · Four weeks out</span><b>Point of view</b><small>Name the problem every enterprise AI rollout is hiding</small><em>Job: earn attention from the right titles</em></button>
@@ -1546,7 +1567,7 @@
         <div class="of"><span class="k">Engagement</span><b>2,335</b><span>reactions, comments, saves, sends and reposts</span></div>
         <div class="of"><span class="k">A room</span><b>16</b><span>registrations for one relevant session, from the content alone</span></div>
         <div class="of"><span class="k">Conversations</span><b>Calls</b><span>booked from warm inbound enquiries and follow-up DMs</span></div>
-        <div class="oftx"><b>What this means for AOCyber.</b> The quarterly briefing funnel on slide 8 is this same sequence, run around Justin Donnaruma's point of view instead of ours: attention, engagement, a room, conversations. We do not promise these numbers for Justin. We show what the mechanism does when it runs consistently.</div>
+        <div class="oftx"><b>What this means for AOCyber.</b> The quarterly briefing funnel on slide 8 is this same sequence, run around Justin's point of view instead of ours: attention, engagement, a room, conversations. We do not promise these numbers for Justin. We show what the mechanism does when it runs consistently.</div>
       </div>
     </div>
   </section>
@@ -1694,12 +1715,11 @@
 <li>Positioning and strategy</li>
 <li>Justin's profile rewritten and live in week one</li>
 <li>Two recorded 45-minute interviews a month</li>
-<li>Twelve LinkedIn posts a month across Trust, Authority and Conversion</li>
-<li>Editorial calendar, always two weeks ahead</li>
-<li>100 connection requests a week to an ideal client list AOCyber approves. Requests only, no messages</li>
+<li>Twelve LinkedIn posts a month, always two weeks ahead</li>
+<li>100 connection requests a week to an approved list. Requests only, no messages</li>
 <li>One quarterly briefing campaign</li>
 <li>Fortnightly coaching and a monthly one-page review</li>
-<li>Voice profile, content bank and playbook, AOCyber's from day one</li>
+<li>Voice profile, content bank and playbook, yours from day one</li>
           </ul>
           <div class="meta">Best when the goal is trust, reach and a fuller briefing. Demos come from inbound and the network.</div>
         </div>
@@ -1834,7 +1854,7 @@
   <section class="slide ink" data-title="Investment and risk reversal">
     <div class="wrap">
       <p class="eyebrow reveal"><span class="n">17</span>Investment and risk reversal</p>
-      <h2 class="sec-head grad reveal">Two packages. Ninety days. Then month to month<span class="stop">.</span></h2>
+      <h2 class="sec-head grad reveal oneline">Two packages. Ninety days. Then month to month<span class="stop">.</span></h2>
       <div class="inv2">
         <div class="rec card reveal">
           <div class="k">Content</div>
