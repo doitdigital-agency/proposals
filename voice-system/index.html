@@ -1149,9 +1149,9 @@
   .postmock{padding:14px 18px}
   .pm-ev{padding:10px 14px;gap:2px}
   .pm-ev b{font-size:14px}.pm-ev span{font-size:12px}.pm-ev i{font-size:10.5px;margin-top:2px}
-  section[data-title="The quarterly briefing funnel"] .stages{margin-top:10px}
-  section[data-title="The quarterly briefing funnel"] .track{margin-top:16px}
-  section[data-title="The quarterly briefing funnel"] .sec-lead{margin-top:12px}
+  section[data-title="The campaign funnel"] .stages{margin-top:10px}
+  section[data-title="The campaign funnel"] .track{margin-top:16px}
+  section[data-title="The campaign funnel"] .sec-lead{margin-top:12px}
 
   /* v8.7: audit fixes (labels to 13px floor, alignment, crops, contrast) */
   body.staged .bar{grid-template-columns:270px 1fr 44px}
@@ -1195,12 +1195,12 @@
   section[data-title="Investment and risk reversal"] .tcol{gap:14px}
   section[data-title="Investment and risk reversal"] .tcol .bd{padding:20px 24px;font-size:17.5px;line-height:1.5;flex:1;display:flex;flex-direction:column;justify-content:center}
   section[data-title="Investment and risk reversal"] .tcol .bd b{font-size:14px;margin-bottom:6px}
-  section[data-title="The quarterly briefing funnel"] .sec-lead{max-width:82ch}
-  section[data-title="The quarterly briefing funnel"] .stagepanel{min-height:500px}
+  section[data-title="The campaign funnel"] .sec-lead{max-width:82ch}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:500px}
   /* v8.8b: keep the light deliverables card on the ink slide; slide 8 fit */
   .slide.ink .dark.card,.slide.ink .dark{background:#F4F4F3;border-color:transparent;color:var(--ink)}
   .slide.ink .dark .k{color:var(--dim)}.slide.ink .dark b{color:var(--ink)}.slide.ink .dark .dgrid span{color:var(--silver)}
-  section[data-title="The quarterly briefing funnel"] .stagepanel{min-height:494px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:494px}
 
   /* v8.9: body text to 18px for the meeting */
   .v8list li,.blk p,.blk .v8list li,.dl p,.outs li span,.note,.evtx,.oftx,.ms p,.tc li,.pc p,.qs,.shot .cap p,.shots.team.four .shot .cap .role,.chk li,.xlist li,.scope2 .chk li,.scope2 .xlist li,.dgrid span,.inc li,.rec li,.tl2,.why,.bounds .bd,.tcol .bd,.decide span,.nsteps li,.close p,.close .lead,.stg small,.stg em,.si p,.of span:not(.k),.anal3 figcaption span,.feed-in .tx,.sh span:not(.k),.feed.six .sh span:not(.k),.impcap em,.cover-bullets span,.slide.ink .dl p,.slide.ink .dgrid span,.slide.ink .chk li,.slide.ink .xlist li,.slide.ink .note,section[data-title="The content system"] .note{font-size:18px;line-height:1.45}
@@ -1213,8 +1213,8 @@
   .qs b{font-size:15px}.impcap span{font-size:14px}
   /* keep the tall slides inside 1080 */
   .slide{padding:64px 56px 56px}
-  section[data-title="The quarterly briefing funnel"] .stg small,section[data-title="The quarterly briefing funnel"] .stg em{font-size:15px}
-  section[data-title="The quarterly briefing funnel"] .sec-lead{font-size:19px}
+  section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:15px}
+  section[data-title="The campaign funnel"] .sec-lead{font-size:19px}
   section[data-title="How we do it ourselves"] .sh span:not(.k),section[data-title="How we do it ourselves"] .impcap em{font-size:14.5px}
   section[data-title="How we do it ourselves"] .feed-in .tx{font-size:16px}
   section[data-title="How we have helped others"] .qs,section[data-title="How we have helped others"] .pc p{font-size:16px}
@@ -1318,9 +1318,11 @@
   .inv2 .tcol{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
   .inv2 .tcol .bd{padding:12px 16px;font-size:14px;line-height:1.4}
   .inv2 .rec .inc{grid-template-columns:1fr 1fr;gap:5px 18px}
-  section[data-title="The quarterly briefing funnel"] .stagepanel{min-height:480px}
-  section[data-title="The quarterly briefing funnel"] .sec-lead{font-size:18px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:480px}
+  section[data-title="The campaign funnel"] .sec-lead{font-size:18px}
   section[data-title="Our own content evidence"] .oftx{font-size:15px;line-height:1.4}
+  /* QA: no violet wash on the ROI panel */
+  .roi-out{background-image:none}
 
   /* ============ generic Voice System deck ============ */
   .lockup{margin-bottom:26px}
@@ -1337,6 +1339,48 @@
   section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:14px}
   section[data-title="The campaign funnel"] .stagepanel{min-height:460px}
   .cyc{font-family:var(--code);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+
+  /* ============ QA pass 18 Sep 2026: type floors, alignment, violet ============ */
+  .roi-out{background-image:none}
+  .inv2 .rec .tl2{font-size:16px;line-height:1.45}.inv2 .rec .why{font-size:16px;line-height:1.5}
+  .slide.ink .rec .why{border-top-color:rgba(255,255,255,0.22)}
+  .cg li{font-size:16px;line-height:1.45}.cg li::before{top:1px}
+  .roi-cell .cl{font-size:13px}
+  .pkt button{font-size:15px;padding:10px 16px}
+  .slide.close .pillbtn{font-size:16px;padding:16px 34px}
+  .closebar{max-width:960px}
+  .fine{font-size:13px}.closebar .links{font-size:15px}
+  .assump li{font-size:15px}
+  body.staged .cover h1{max-width:20ch}
+  .cover-meta{font-size:15px}.ghostbtn{font-size:15px}
+  .pm-text.clamp{-webkit-line-clamp:5}
+  section[data-title="The campaign funnel"] .postmock{padding:10px 18px}
+  section[data-title="The campaign funnel"] .pm-note{margin-top:6px}
+  section[data-title="The campaign funnel"] .stages{margin-top:10px}
+  section[data-title="The campaign funnel"] .stagepanel{margin-top:8px}
+  body.staged section[data-title="The campaign funnel"] .track{margin-top:12px}
+  section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:15px}
+  .slide.ink .prob p{font-size:18px;line-height:1.45;color:rgba(244,244,243,0.9)}
+  section[data-title="The problem"] .prob{margin-top:0;flex:1}
+  section[data-title="The problem"] .diag{align-items:stretch}
+  section[data-title="The problem"] .diag>div:last-child{display:flex;flex-direction:column}
+  section[data-title="The problem"] .prob .card{padding:26px 28px}
+  section[data-title="The problem"] .diag .note{margin-top:16px!important}
+  section[data-title="The growth system"] .col4{grid-template-columns:1fr 1fr 1fr 1.3fr}
+  section[data-title="The 12-week outcome"] .pgrid .browser figcaption{font-size:15px;line-height:1.45}
+  .browser .bbar span{font-size:13px}
+  section[data-title="The 12-week outcome"] .pgrid .browser img{height:232px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:520px}
+  section[data-title="The campaign funnel"] .stages{margin-top:8px}
+  section[data-title="The campaign funnel"] .stagepanel{margin-top:6px}
+  section[data-title="The campaign funnel"] .pm-av{width:40px;height:40px}
+  section[data-title="The campaign funnel"] .pm-comment{margin-top:8px;padding-top:8px}
+  section[data-title="The campaign funnel"] .pm-comment p{padding:6px 10px}
+  section[data-title="The campaign funnel"] .pm-social{padding:6px 0}
+  section[data-title="The campaign funnel"] .pm-actions{padding:2px 0 0}
+  section[data-title="The campaign funnel"] .pm-ev{padding:8px 12px}
+  section[data-title="The campaign funnel"] .stageinfo{display:flex;flex-direction:column}
+  section[data-title="The campaign funnel"] .stageinfo .pm-note{font-size:13px;color:var(--dim);padding-top:14px}
 </style>
 </head>
 <body>
@@ -1357,7 +1401,7 @@
     <div class="wrap cover">
       <div class="lockup reveal"><div class="mk">did<span class="dot">.</span></div></div>
       <p class="eyebrow reveal">The Voice System</p>
-      <h1 class="grad reveal">Turn one founder's expertise into the voice your buyers trust<span class="stop">.</span></h1>
+      <h1 class="grad reveal">Turn one founder's expertise into the voice your buyers&nbsp;trust<span class="stop">.</span></h1>
       <p class="lead reveal">Twelve weeks. One founder voice. Twelve posts every 28 days, written from two recorded interviews. An outbound add-on when you want the conversations booked, not just started.</p>
       <div class="cover-bullets reveal"><span>12 LinkedIn posts every 28 days</span><span>Two recorded interviews</span><span>One founder voice</span><span>No writing required from you</span></div>
       <p class="cover-meta reveal">Prepared by <b>Nas Vou, Do It Digital</b> · September 2026</p>
@@ -1395,7 +1439,7 @@
           <div class="blocklbl">By week 12, you will have</div>
           <ol class="outs">
             <li><b>A positioned profile</b><span>The founder's profile rewritten around the buyers you want more of.</span></li>
-            <li><b>A consistent publishing rhythm</b><span>Twelve strategic posts per month across Trust, Authority and Conversion.</span></li>
+            <li><b>A consistent publishing rhythm</b><span>Twelve strategic posts every 28 days across Trust, Authority and Conversion.</span></li>
             <li><b>A documented voice</b><span>A record of the founder's phrasing, beliefs, stories, examples and points of view.</span></li>
             <li><b>A content bank</b><span>Ideas and source material you keep using after the first 12 weeks.</span></li>
             <li><b>A quarterly campaign model</b><span>One focused campaign every 12 weeks built around a live session, an event, a report or a strategic point of view.</span></li>
@@ -1404,12 +1448,12 @@
           <div class="note"><b>Honest line</b> We control the content system and activity. We do not control when a client signs. No revenue result is promised.</div>
         </div>
       <div class="reveal">
-          <div class="blocklbl">Inside the system. Real screens from our client portal and profile tool. Hover to enlarge</div>
+          <div class="blocklbl">Real screens from our client portal and profile tool. Hover to enlarge</div>
           <div class="pgrid">
             <figure class="browser card zm zl zt"><img class="zoom" src="clients/profile-tool.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>profile.doitdigital.agency</span></div><img src="clients/profile-tool.png" alt="Free AI LinkedIn Profile Optimizer"><figcaption><b>Week one, the score.</b> The profile scored in sixty seconds, before the rewrite.</figcaption></figure>
             <figure class="browser card zm zr zt"><img class="zoom" src="shots/portal-profile.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · profile rebuild</span></div><img src="shots/portal-profile.png" alt="Portal, profile rebuild with before and after"><figcaption><b>Week two, the rewrite.</b> Before and after, approved section by section.</figcaption></figure>
             <figure class="browser card zm zl zb"><img class="zoom" src="shots/portal-calendar.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · content calendar</span></div><img src="shots/portal-calendar.png" alt="Portal, content calendar board"><figcaption><b>Every week, the drafts.</b> Being written, waiting on you, approved. Nothing publishes without sign-off.</figcaption></figure>
-            <figure class="browser card zm zr zb"><img class="zoom" src="shots/portal-reporting.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · reporting</span></div><img src="shots/portal-reporting.png" alt="Portal, performance reporting"><figcaption><b>Every month, the numbers.</b> Posts, engagements, impressions, profile views, conversations.</figcaption></figure>
+            <figure class="browser card zm zr zb"><img class="zoom" src="shots/portal-reporting.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · reporting</span></div><img src="shots/portal-reporting.png" alt="Portal, performance reporting"><figcaption><b>Every cycle, the numbers.</b> Posts, engagements, impressions, profile views, conversations.</figcaption></figure>
           </div>
         </div>
         </div>
@@ -1427,7 +1471,7 @@
 <li>Strategic takeaways</li>
 <li>Evidence of access and depth</li></ul></div>
         <div class="blk card reveal"><div class="k">Layer 3</div><h3>One campaign every 12 weeks</h3><p>Rather than forcing a monthly webinar schedule, we run one focused campaign per quarter around a live session, an event, a report or a point of view.</p><p>It is not designed simply to fill a room. It is designed to identify the right people in the room and create a reason for the next conversation.</p></div>
-        <div class="blk card reveal"><div class="k">Layer 4 · add-on</div><h3>Warm and cold outbound</h3><p>Once the profile and the content are live, the same target list becomes a meeting engine:</p><ul class="v8list"><li>Warm: everyone who engaged, viewed or registered, followed up by name</li>
+        <div class="blk card reveal"><div class="k">Layer 4 · add-on</div><h3>Warm and cold outbound</h3><p>Once the content is live, the same target list becomes a meeting engine:</p><ul class="v8list"><li>Warm: everyone who engaged, viewed or registered, followed up by name</li>
 <li>Cold: a named target list at the accounts you want</li>
 <li>Connection requests at the account's limit</li>
 <li>Inbox managed, calls booked into the calendar</li></ul><p><strong style="color:var(--fg)">Content earns the right to the conversation. Outbound goes and has it.</strong></p></div>
@@ -1438,7 +1482,7 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="n">05</span>The campaign funnel</p>
       <h2 class="sec-head grad reveal">One focused campaign. Five stages. A clear next&nbsp;step<span class="stop">.</span></h2>
-      <p class="sec-lead reveal">Five posts over five weeks, each with one job. Click a stage to read the example post. The same structure works for a live session, an event, a report or a launch.</p>
+      <p class="sec-lead reveal">Five posts over five weeks, each with one job. Click a stage to read the example post.</p>
       <div class="track reveal"><i></i><i></i><i></i><i></i><i></i></div>
       <div class="stages reveal" role="tablist">
         <button class="stg active" data-stage="0" role="tab"><span class="k">01 · Four weeks out</span><b>Point of view</b><small>Name the problem your buyers are quietly living with</small><em>Job: earn attention from the right people</em></button>
@@ -1457,14 +1501,14 @@
             <div class="pm-actions"><span><svg viewBox="0 0 24 24"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg> Like</span><span><svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Comment</span><span><svg viewBox="0 0 24 24"><path d="m2 9 3-3 3 3"/><path d="M13 18H7a2 2 0 0 1-2-2V6"/><path d="m22 15-3 3-3-3"/><path d="M11 6h6a2 2 0 0 1 2 2v10"/></svg> Repost</span><span><svg viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg> Send</span></div>
             <div class="pm-comment"><span class="pm-cav">FD</span><div><b>Founder <i>· B2B services firm · 2nd</i></b><p id="fn-cmt"></p><span class="pm-cact">Like · Reply · <em id="fn-cmtn"></em></span></div></div>
           </div>
-          <div class="pm-note">Illustrative mock-up. The engagement shown is an example, not a result.</div>
-        </div>
+          </div>
         <div class="stageinfo">
           <div class="k" id="fn-k"></div>
           <h3 id="fn-title"></h3>
           <div class="si"><b>Format</b><p id="fn-fmt"></p></div>
           <div class="si"><b>Job</b><p id="fn-job"></p></div>
           <div class="si"><b>The ask</b><p id="fn-cta"></p></div>
+          <div class="pm-note" style="margin-top:auto">Illustrative mock-up. The engagement shown is an example, not a result.</div>
         </div>
       </div>
     </div>
@@ -1474,12 +1518,12 @@
       <p class="eyebrow reveal"><span class="n">06</span>The content mechanism</p>
       <h2 class="sec-head grad reveal">How 45 minutes a fortnight becomes strategic content and commercial conversations<span class="stop">.</span></h2>
       <div class="mech">
-        <div class="ms card reveal"><div class="num">1</div><h3>Insight extraction</h3><p>Two recorded 45-minute interviews each month. We listen to the founder's actual answers, examples and phrasing rather than producing generic posts from a transcript.</p><div class="out"><b>Output</b>Two to three weeks of raw material per interview</div></div>
+        <div class="ms card reveal"><div class="num">1</div><h3>Insight extraction</h3><p>Two recorded 45-minute interviews each cycle. We listen to the founder's actual answers, examples and phrasing rather than producing generic posts from a transcript.</p><div class="out"><b>Output</b>Two to three weeks of raw material per interview</div></div>
         <div class="ms card reveal"><div class="num">2</div><h3>Strategic positioning</h3><p>We audit the current presence, research the ideal buyer and position the founder around one clear lane.</p><div class="out"><b>Output</b>Positioning brief and profile live by week two</div></div>
         <div class="ms card reveal"><div class="num">3</div><h3>Voice-matched writing</h3><p>We turn the interviews into twelve posts across Trust, Authority and Conversion.</p><div class="out"><b>Output</b>Twelve drafts prepared five business days before publishing</div></div>
         <div class="ms card reveal"><div class="num">4</div><h3>Editorial production</h3><p>We maintain the calendar, voice profile and content bank. Every draft is checked against the agreed quality standard before the founder sees it.</p><div class="out"><b>Output</b>A calendar the founder can review in five minutes</div></div>
         <div class="ms card reveal"><div class="num">5</div><h3>Approval and publishing</h3><p>The founder approves or edits each post. One revision round is included. Nothing publishes without sign-off.</p><div class="out"><b>Output</b>Three posts per week, published on schedule</div></div>
-        <div class="ms card reveal"><div class="num">6</div><h3>Commercial tracking</h3><p>Relevant conversations, registrations, calls and opportunities are logged.</p><div class="out"><b>Output</b>Monthly review in commercial terms</div></div>
+        <div class="ms card reveal"><div class="num">6</div><h3>Commercial tracking</h3><p>Relevant conversations, registrations, calls and opportunities are logged.</p><div class="out"><b>Output</b>A review each cycle, in commercial terms</div></div>
       </div>
     </div>
   </section>
@@ -1495,7 +1539,7 @@
         <div class="blk card reveal"><div class="k">05 · Event and campaign content</div><p>What can you teach before, during and after a session, an event or a launch?</p></div>
         <div class="blk card reveal"><div class="k">06 · Commercial invitation</div><p>What is the next logical step for someone who agrees with the founder's point of view?</p></div>
       </div>
-      <div class="note reveal"><b>The rule</b> Every post has a job. Not every post asks for a demo. Every post strengthens the same position: the one your buyers should associate with your company.</div>
+      <div class="note reveal"><b>The rule</b> Every post has a job. Not every post asks for a call. Every post strengthens the same position: the one your buyers should associate with your company.</div>
     </div>
   </section>
   <section class="slide" data-title="Our own content evidence">
@@ -1513,7 +1557,7 @@
         <div class="of"><span class="k">Engagement</span><b>2,335</b><span>reactions, comments, saves, sends and reposts</span></div>
         <div class="of"><span class="k">A room</span><b>16</b><span>registrations for one relevant session, from the content alone</span></div>
         <div class="of"><span class="k">Conversations</span><b>Calls</b><span>booked from warm inbound enquiries and follow-up DMs</span></div>
-        <div class="oftx"><b>What this means for you.</b> The quarterly briefing funnel on slide 8 is this same sequence, run around your founder's point of view instead of ours: attention, engagement, a room, conversations. We do not promise these numbers for you. We show what the mechanism does when it runs consistently.</div>
+        <div class="oftx"><b>What this means for you.</b> The campaign funnel on slide 5 is this same sequence, run around your founder's point of view instead of ours: attention, engagement, a room, conversations. We do not promise these numbers for you. We show what the mechanism does when it runs consistently.</div>
       </div>
     </div>
   </section>
@@ -1658,7 +1702,7 @@
 <li>Target list approved</li></ul></div>
           <div class="tc"><div class="k">Week 4</div><b>Rhythm</b><ul><li>Twelve posts delivered</li>
 <li>First performance review</li>
-<li>Month-two plan agreed</li>
+<li>Cycle-two plan agreed</li>
 <li>Campaign sequence drafted</li></ul></div>
           <div class="tc m"><div class="k">Weeks 5 to 8</div><b>Proof and reach</b><ul><li>Client wins and lessons as content</li>
 <li>Build the campaign funnel</li>
@@ -1742,11 +1786,11 @@
 <li>Twelve LinkedIn posts per cycle</li>
 <li>Editorial calendar, two weeks ahead</li>
 <li>One campaign every 12 weeks</li>
-<li>Fortnightly coaching, monthly review</li>
+<li>Fortnightly coaching, review each cycle</li>
 <li>Voice profile and content bank, yours from day one</li></ul>
           <div class="why"><b>Twelve weeks</b> produces the voice, the rhythm and the evidence to make the next decision with data.</div>
         </div>
-        <div class="rec card reveal" style="border-color:#F4F4F3">
+        <div class="rec card reveal">
           <div class="k">Add-on · Warm and cold outbound</div>
           <div class="big">+ USD 2,000<span>every 28 days</span></div>
           <div class="tl2">Added to package one, USD 5,500 per cycle. Same three-cycle start, same notice.</div>
@@ -1782,7 +1826,7 @@
 <li>Book the first recorded interview</li>
 <li>Confirm the approval process</li>
 <li>Answer the commercial and operational questions</li></ol></div>
-        <div class="cg card reveal"><div class="k">After a yes</div><h3>The first month</h3><ol><li>Strategy call within seven days</li>
+        <div class="cg card reveal"><div class="k">After a yes</div><h3>The first four weeks</h3><ol><li>Strategy call within seven days</li>
 <li>Audit and buyer research during week one</li>
 <li>Profile live by week two</li>
 <li>First posts published during week three</li>
