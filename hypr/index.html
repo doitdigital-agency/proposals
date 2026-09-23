@@ -1,0 +1,1986 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>LinkedIn Outbound for HYPR · a proposal by did.</title>
+<meta name="description" content="LinkedIn Outbound for HYPR Digital Marketing: positioning and graphics rebuilt, a named target list, warm and cold sequences in Pritpal's voice, and discovery calls booked into Jay's calendar. GBP 1,100 every 28 days plus 50% of the first invoice.">
+<meta name="theme-color" content="#F4F4F3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LinkedIn Outbound for HYPR, by did.">
+<meta property="og:description" content="A 12-week LinkedIn outbound system for HYPR Digital Marketing, prepared by Do It Digital.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  /* did. brand tokens, light Porcelain theme (ported from did-site src/styles/tokens.css) */
+  :root{
+    --bg:#F4F4F3; --lift:#FFFFFF; --fg:#141018; --silver:#5C5B67; --dim:#6E6D78;
+    --violet:#8366FF; --ink:#141018; --paper:#F4F4F3; --paper-lift:#E9EAEC;
+    --hair:rgba(20,19,24,0.12); --hair-strong:rgba(20,19,24,0.20);
+    --disp:'Space Grotesk',sans-serif; --body:'Hanken Grotesk','Inter',sans-serif; --mono:'JetBrains Mono',monospace;
+    --cta-bg:#141018; --cta-text:#F4F4F3; --cta-hover-shadow:0 12px 30px rgba(0,0,0,0.42),0 0 22px rgba(255,255,255,0.95);
+    --ghost-border:rgba(20,19,24,0.30); --surface-hover:rgba(20,19,24,0.05);
+    --nav-bg:rgba(244,244,243,0.80); --glow-rgb:231,231,235;
+    --grad-image:linear-gradient(170deg,#141318 0%,#3C3B45 50%,#76757F 100%);
+    --field:radial-gradient(120% 92% at 50% 112%,rgba(131,102,255,0.18) 0%,rgba(var(--glow-rgb),0.92) 40%,var(--bg) 78%);
+    --tint:rgba(131,102,255,0.07);
+    --card-shadow:0 1px 2px rgba(20,19,24,0.04),0 10px 30px rgba(20,19,24,0.06);
+    --card-shadow-hover:0 2px 4px rgba(20,19,24,0.05),0 18px 40px rgba(20,19,24,0.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow:hidden}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .grad{background:var(--grad-image);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:0.05em}
+  .stop{color:var(--violet);-webkit-text-fill-color:var(--violet)}
+  .v{color:var(--violet)}
+
+  /* nav */
+  .nav{position:fixed;inset:0 0 auto 0;z-index:50;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,40px);
+    background:var(--nav-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+  .navmark{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.035em;line-height:1;display:inline-flex;align-items:baseline;color:var(--fg)}
+  .navmark .l{display:inline-block;overflow:hidden;font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
+  .navmark .dot{display:inline-block;color:var(--violet)}
+  .navmark .l:not(.k){max-width:0;opacity:0;animation:navReveal 5s cubic-bezier(0.65,0,0.35,1) .5s 1 both}
+  .navmark .sp{display:inline-block;max-width:0;animation:navRevealSp 5s cubic-bezier(0.65,0,0.35,1) .5s 1 both}
+  @keyframes navReveal{0%{max-width:0;opacity:0}9%{max-width:1.4em;opacity:1}64%{max-width:1.4em;opacity:1}82%,100%{max-width:0;opacity:0}}
+  @keyframes navRevealSp{0%{max-width:0}9%{max-width:0.3em}64%{max-width:0.3em}82%,100%{max-width:0}}
+  @media (prefers-reduced-motion:reduce){.navmark .l:not(.k),.navmark .sp{animation:none}}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-for{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim)}
+  .nav-for img{width:26px;height:26px;border-radius:7px}
+  .nav-cta{border:1px solid var(--ghost-border);color:var(--fg);font-weight:600;font-size:13px;padding:9px 18px;border-radius:999px;white-space:nowrap;transition:border-color .2s,background .2s}
+  .nav-cta:hover{border-color:var(--fg);background:var(--surface-hover)}
+  .progress{position:fixed;top:64px;left:0;height:2px;background:var(--violet);z-index:50;transition:width .35s ease;width:6%}
+
+  /* deck */
+  .deck{position:relative;width:100vw;height:100vh;overflow:hidden}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;padding:88px clamp(24px,5vw,64px) 80px;overflow-y:auto;
+    opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .4s ease,transform .4s ease,visibility .4s}
+  .slide.active{opacity:1;visibility:visible;transform:none}
+  .slide.glow{background:var(--field)}
+  .wrap{width:100%;max-width:1140px;margin:auto}
+  .center{text-align:center}
+  .eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:0.28em;text-transform:uppercase;color:var(--violet);margin-bottom:18px}
+  .eyebrow .n{color:var(--dim);letter-spacing:0.1em}
+  .eyebrow .n::after{content:"";display:inline-block;width:22px;height:1px;background:var(--hair-strong);margin-left:12px;vertical-align:middle}
+  .center .eyebrow{justify-content:center}
+  .sec-head{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.6vw,54px);line-height:1.04;letter-spacing:-0.035em;max-width:20ch}
+  .center .sec-head{margin-left:auto;margin-right:auto}
+  .sec-lead{font-size:clamp(16px,1.75vw,19px);line-height:1.6;color:var(--silver);max-width:66ch;margin-top:18px}
+  .sec-lead strong{color:var(--fg);font-weight:600}
+  .center .sec-lead{margin-left:auto;margin-right:auto}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s cubic-bezier(.2,.7,.2,1),transform .55s cubic-bezier(.2,.7,.2,1)}
+  .slide.active .reveal{opacity:1;transform:none;transition-delay:var(--rd,0s)}
+  @media (prefers-reduced-motion:reduce){.reveal{transition:none}.slide{transition:opacity .2s}}
+
+  /* shared card */
+  .card{border:1px solid var(--hair);border-radius:18px;background:var(--lift);box-shadow:var(--card-shadow);transition:transform .2s,box-shadow .25s,border-color .2s}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--card-shadow-hover);border-color:var(--hair-strong)}
+  .k{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--violet)}
+
+  /* cover */
+  .lockup{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:34px}
+  .lockup .mk{font-family:var(--disp);font-weight:600;font-size:40px;letter-spacing:-0.045em;line-height:1}
+  .lockup .mk .dot{color:var(--violet)}
+  .lockup .x{font-family:var(--mono);font-size:14px;color:var(--dim)}
+  .lockup img{width:64px;height:64px;border-radius:16px;box-shadow:var(--card-shadow)}
+  .cover h1{font-family:var(--disp);font-weight:600;font-size:clamp(40px,6.4vw,80px);line-height:1.0;letter-spacing:-0.04em;max-width:16ch;margin:0 auto}
+  .cover .lead{font-size:clamp(17px,1.9vw,22px);line-height:1.55;color:var(--silver);max-width:54ch;margin:26px auto 0}
+  .cover-meta{font-family:var(--mono);font-size:12px;letter-spacing:0.04em;color:var(--dim);margin-top:30px;line-height:2}
+  .cover-meta b{color:var(--silver);font-weight:400}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+  .pillbtn{display:inline-flex;align-items:center;background:var(--cta-bg);color:var(--cta-text);font-weight:600;font-size:14px;padding:14px 30px;border-radius:999px;cursor:pointer;border:none;font-family:inherit;transition:transform .2s,box-shadow .25s}
+  .pillbtn:hover{transform:translateY(-2px);box-shadow:var(--cta-hover-shadow)}
+  .ghostbtn{display:inline-flex;align-items:center;border:1px solid var(--ghost-border);color:var(--fg);font-weight:600;font-size:14px;padding:13px 28px;border-radius:999px;cursor:pointer;background:transparent;font-family:inherit;transition:border-color .2s,background .2s}
+  .ghostbtn:hover{border-color:var(--fg);background:var(--surface-hover)}
+
+  /* prose + big stats */
+  .prose p{font-size:clamp(16px,1.8vw,19px);line-height:1.62;color:var(--silver);max-width:60ch;margin-top:18px}
+  .prose p strong{color:var(--fg);font-weight:600}
+  .opp{display:grid;grid-template-columns:1fr 0.9fr;gap:48px;margin-top:22px;align-items:center}
+  .opp .prose p:first-child{margin-top:0}
+  .statcol{display:flex;flex-direction:column;gap:14px}
+  .statrow{padding:20px 24px;display:grid;grid-template-columns:auto 1fr;column-gap:22px;row-gap:2px;align-items:center;
+    background-image:radial-gradient(150% 120% at 0% 0%,var(--tint),transparent 62%)}
+  .statrow .n{grid-row:1 / span 2;font-family:var(--disp);font-weight:600;font-size:clamp(34px,3.6vw,48px);letter-spacing:-0.035em;line-height:1;min-width:2.4ch}
+  .statrow .l{font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);align-self:end}
+  .statrow .cap{font-size:13.5px;line-height:1.45;color:var(--silver);align-self:start}
+
+  /* screenshot slots */
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+  .shot{overflow:hidden;display:flex;flex-direction:column}
+  .shot.now{border-color:var(--violet)}
+  .shot .ph{position:relative;aspect-ratio:4/3;background:var(--paper-lift);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .shot .ph.tall{aspect-ratio:auto;height:clamp(200px,32vh,300px)}
+  .shot .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .shot .ph .empty{position:absolute;inset:12px;border:1px dashed var(--hair-strong);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;text-align:center;padding:12px}
+  .shot .ph .empty span{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:12px;color:var(--dim)}
+  .shot .ph:not(.missing) .empty{display:none}
+  .shot .cap{padding:18px 20px 20px}
+  .shot .cap h3{font-family:var(--disp);font-weight:600;font-size:17px;letter-spacing:-0.01em;margin-top:8px;line-height:1.2}
+  .shot .cap p{color:var(--silver);font-size:14.5px;line-height:1.5;margin-top:8px}
+
+  /* rendered profile cards: shown inside a slot until a real screenshot is dropped in */
+  .li{position:absolute;inset:0;display:flex;flex-direction:column;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.9);text-align:left;overflow:hidden}
+  .li .ban{height:28%;background:#0b0b0b;position:relative;flex:none}
+  .li .ban.jw{background:linear-gradient(120deg,#1d2a44,#3b6ea5)}
+  .li .ban .bt{position:absolute;left:18px;top:14px;color:#fff;font-weight:700;font-size:15px;line-height:1.15}
+  .li .ban .glow{position:absolute;right:26px;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:5px solid #f2e14a;box-shadow:0 0 18px rgba(242,225,74,0.7),inset 0 0 12px rgba(242,225,74,0.5)}
+  .li .av{position:absolute;left:18px;bottom:-30px;width:72px;height:72px;border-radius:50%;background:#e9e5df;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#4b4b4b;overflow:hidden}
+  .li .av.sq{border-radius:6px;background:#000}
+  .li .av img{width:100%;height:100%;object-fit:cover}
+  .li .bd{padding:40px 18px 14px;display:flex;flex-direction:column;gap:4px}
+  .li .nm{font-size:19px;font-weight:600;line-height:1.2;display:flex;align-items:center;gap:6px}
+  .li .nm small{font-size:12px;color:rgba(0,0,0,0.6);font-weight:400}
+  .li .nm .vf{display:inline-block;width:14px;height:14px;border-radius:50%;border:1.5px solid rgba(0,0,0,0.55)}
+  .li .hl{font-size:13.5px;line-height:1.35;color:rgba(0,0,0,0.9)}
+  .li .mt{font-size:12.5px;color:rgba(0,0,0,0.6);line-height:1.4}
+  .li .mt b{color:#0a66c2;font-weight:600}
+  .li .btns{display:flex;gap:8px;margin-top:8px}
+  .li .btns span{border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;border:1px solid #0a66c2;color:#0a66c2}
+  .li .btns span.p{background:#0a66c2;color:#fff}
+  .shot .ph .li{display:none}
+  .shot .ph.missing .li{display:flex}
+  .shot .ph.missing .li ~ .empty{display:none}
+
+  /* stat pills + reactions chart (what we heard) */
+  .pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .pill{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:12px 18px;display:flex;align-items:baseline;gap:10px;box-shadow:var(--card-shadow)}
+  .pill b{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-0.03em;line-height:1}
+  .pill span{font-size:13px;color:var(--dim)}
+  .chart{padding:22px 24px}
+  .bars{display:flex;flex-direction:column;gap:9px;margin-top:14px}
+  .bar{display:grid;grid-template-columns:150px 1fr 40px;align-items:center;gap:12px;font-size:13px;color:var(--silver)}
+  .bar span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar i{display:block;height:14px;border-radius:999px;background:var(--paper-lift);position:relative;overflow:hidden}
+  .bar i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:999px;background:#B9B8C4;transform-origin:left;transform:scaleX(0);transition:transform .8s cubic-bezier(.2,.7,.2,1) .25s}
+  .slide.active .bar i::after{transform:scaleX(1)}
+  .bar.me i::after{background:var(--violet)}
+  .bar b{font-family:var(--disp);font-weight:600;font-size:14px;color:var(--fg);text-align:right}
+  .bar.me b{color:var(--violet)}
+  .legend{display:flex;gap:18px;margin-top:14px;font-size:12px;color:var(--dim)}
+  .legend span{display:flex;align-items:center;gap:7px}
+  .legend span::before{content:"";width:10px;height:10px;border-radius:3px;background:#B9B8C4}
+  .legend span.me::before{background:var(--violet)}
+
+  /* funnel stages + post preview */
+  .stages{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:22px}
+  .stg{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:14px 16px;text-align:left;cursor:pointer;font-family:inherit;color:var(--fg);display:flex;flex-direction:column;gap:3px;position:relative;transition:border-color .2s,box-shadow .2s,transform .2s;box-shadow:var(--card-shadow)}
+  .stg b{font-family:var(--disp);font-weight:600;font-size:17px;letter-spacing:-0.01em}
+  .stg small{font-size:12px;color:var(--dim)}
+  .stg:hover{transform:translateY(-2px)}
+  .stg.active{border-color:var(--violet);box-shadow:0 0 0 3px rgba(131,102,255,0.18),var(--card-shadow)}
+  .stg:not(:last-child)::after{content:"";position:absolute;right:-8px;top:50%;width:6px;height:6px;border-top:1.5px solid var(--hair-strong);border-right:1.5px solid var(--hair-strong);transform:translateY(-50%) rotate(45deg)}
+  .stagepanel{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:16px;overflow:hidden}
+  .postmock{padding:24px 26px;background:var(--paper);border-right:1px solid var(--hair);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.9)}
+  .pm-head{display:flex;align-items:center;gap:12px}
+  .pm-av{width:44px;height:44px;border-radius:50%;background:#e9e5df;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#4b4b4b;flex:none}
+  .pm-who b{display:block;font-size:14px;font-weight:600}
+  .pm-who span{display:block;font-size:12px;color:rgba(0,0,0,0.6)}
+  .pm-text{margin-top:16px;font-size:15.5px;line-height:1.5;white-space:pre-line}
+  .pm-foot{margin-top:14px;font-size:12.5px;color:rgba(0,0,0,0.6)}
+  .stageinfo{padding:24px 26px;display:flex;flex-direction:column;gap:14px}
+  .stageinfo h3{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.02em;line-height:1.1;margin-top:-6px}
+  .si b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:4px}
+  .si p{font-size:14.5px;line-height:1.5;color:var(--silver)}
+  .si.reuse{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair)}
+  .si.reuse p{font-size:13px;color:var(--dim)}
+
+  /* video + quotes */
+  .proofgrid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:20px;margin-top:26px;align-items:start}
+  .vid{overflow:hidden}
+  .vposter{position:relative;display:block;width:100%;aspect-ratio:16/9;border:none;padding:0;background:#000;cursor:pointer;overflow:hidden}
+  .vposter img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .vposter:hover img{transform:scale(1.03)}
+  .vplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:rgba(244,244,243,0.94);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.35);transition:transform .2s}
+  .vplay svg{margin-left:4px}
+  .vposter:hover .vplay{transform:translate(-50%,-50%) scale(1.06)}
+  .vid iframe{display:block;width:100%;aspect-ratio:16/9;border:none;background:#000}
+  .vcap{display:flex;align-items:center;gap:14px;padding:16px 20px}
+  .vcap .av,.q .who .av{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+  .vcap b{display:block;font-family:var(--disp);font-weight:600;font-size:15.5px;letter-spacing:-0.01em}
+  .vcap span{display:block;font-size:13px;color:var(--silver);margin-top:2px}
+  .qcol{display:flex;flex-direction:column;gap:16px}
+  .qcol .q{padding:22px 22px}
+  .qcol .q p{font-size:15px;line-height:1.55}
+  .qcol .q .who{display:flex;align-items:center;gap:12px;padding-top:16px;font-size:13px}
+  .qcol .q .who b{display:block;font-family:var(--disp);font-weight:600;font-size:14.5px;color:var(--fg)}
+
+  /* proof strip */
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+  .sv{padding:22px 22px}
+  .sv b{display:block;font-family:var(--disp);font-weight:600;font-size:clamp(34px,4vw,50px);letter-spacing:-0.04em;line-height:1}
+  .sv span{display:block;font-size:14px;line-height:1.45;color:var(--silver);margin-top:10px}
+
+  /* a month of twelve */
+  .month{margin-top:18px;border:1px solid var(--hair);border-radius:16px;background:var(--lift);padding:14px 18px;box-shadow:var(--card-shadow)}
+  .month .mk{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .month .lg{display:flex;gap:14px;font-size:12px;color:var(--dim);align-items:center}
+  .month .lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  .month .lg i.t{background:#141018}.month .lg i.a{background:var(--violet)}.month .lg i.c{background:#B9B8C4}
+  .cells{display:grid;grid-template-columns:auto repeat(3,1fr) auto repeat(3,1fr);gap:6px 8px;margin-top:12px;align-items:center}
+  .cells .w{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim);padding-right:6px}
+  .cells .c{border-radius:9px;padding:8px 10px;font-size:12px;color:var(--fg);background:var(--paper);border:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center}
+  .cells .c i{font-style:normal;font-family:var(--mono);font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase}
+  .cells .c.t{background:#141018;color:#F4F4F3;border-color:#141018}
+  .cells .c.a{background:var(--violet);color:#fff;border-color:var(--violet)}
+  .cells .c.cv{background:#E4E3EA;color:var(--fg)}
+  .month + .flow{margin-top:18px}
+  .month + .flow .fstep .eg{display:none}
+
+  /* your time table */
+  .tt{overflow:hidden}
+  .tt .r{display:grid;grid-template-columns:1fr 90px 110px;align-items:center}
+  .tt .r+.r{border-top:1px solid var(--hair)}
+  .tt .r>div{padding:12px 16px;font-size:14px;color:var(--silver)}
+  .tt .r>div:nth-child(2),.tt .r>div:nth-child(3){font-family:var(--disp);font-weight:600;color:var(--fg);font-size:15px}
+  .tt .r.head{background:var(--paper)}
+  .tt .r.head>div{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400}
+  .tt .r b{display:block;color:var(--fg);font-weight:600;font-size:15px}
+  .tt .r span{display:block;font-size:13px;line-height:1.4;margin-top:2px}
+  .tt .r.tot{background:rgba(131,102,255,0.06)}
+
+  /* plan: weeks then months */
+  .tl.wk .tlcard{padding:18px 18px}
+  .tl.wk .tlcard .d{font-size:20px}
+  .tl.wk .tlcard li{font-size:13.5px}
+  .tl.mo{grid-template-columns:1fr 1fr;margin-top:14px}
+  .tl.mo .tlcard{padding:18px 20px;display:grid;grid-template-columns:auto 1fr 1.1fr;gap:4px 24px;align-items:center}
+  .tl.mo .tlcard .k{grid-column:1}
+  .tl.mo .tlcard .d{grid-column:1;margin-top:4px;font-size:20px}
+  .tl.mo .tlcard ul{grid-column:2;grid-row:1 / span 2;margin-top:0}
+  .tl.mo .tlcard .goal{grid-column:3;grid-row:1 / span 2;margin-top:0;padding-top:0;border-top:none;border-left:1px solid var(--hair);padding-left:20px}
+
+  /* comparison table */
+  .cmp{overflow:hidden;margin-top:24px}
+  .cmp .r{display:grid;grid-template-columns:1.3fr 0.9fr 0.9fr 1.1fr 1.1fr}
+  .cmp .r+.r{border-top:1px solid var(--hair)}
+  .cmp .r>div{padding:10px 14px;font-size:13.5px;line-height:1.4;color:var(--silver)}
+  .cmp .r>div:first-child{color:var(--fg);font-weight:500}
+  .cmp .r>div:last-child{background:rgba(131,102,255,0.07);color:var(--fg)}
+  .cmp .r.head{background:var(--paper)}
+  .cmp .r.head>div{font-family:var(--disp);font-weight:600;font-size:14px;color:var(--fg)}
+  .cmp .r.head>div:last-child{color:var(--violet)}
+  .cmp .r>div small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);font-weight:400;margin-top:3px}
+  .cmp .no{color:var(--dim)}
+  .cmp .yes{color:var(--fg)}
+  .cmp .r.tot>div{font-family:var(--disp);font-weight:600;color:var(--fg);font-size:14.5px;background:var(--paper)}
+  .cmp .r.tot>div:last-child{background:rgba(131,102,255,0.14)}
+
+  /* team cards + bolt-ons + terms */
+  .inst{padding:24px 26px;height:100%;display:flex;flex-direction:column}
+  .inst .price{font-family:var(--disp);font-weight:600;font-size:clamp(30px,3.6vw,42px);letter-spacing:-0.035em;line-height:1;margin:12px 0 16px}
+  .inst .price span{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;color:var(--dim);text-transform:uppercase;margin-left:8px}
+  .inst .note{margin-top:auto}
+  .bolt{margin-top:14px;padding-top:14px;border-top:1px solid var(--hair)}
+  .bolt b{display:block;font-family:var(--disp);font-weight:600;font-size:22px;letter-spacing:-0.02em;line-height:1}
+  .bolt b span{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;color:var(--dim);text-transform:uppercase;margin-left:6px;font-weight:400}
+  .bolt p{color:var(--silver);font-size:13.5px;line-height:1.45;margin-top:6px}
+  .terms2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  .terms2>div{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:13px 16px;font-size:13.5px;color:var(--silver);line-height:1.5}
+  .terms2 b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:4px}
+
+  /* faq */
+  .faq{display:flex;flex-direction:column;gap:8px}
+  .faq details{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:0 16px}
+  .faq summary{list-style:none;cursor:pointer;padding:12px 0;font-family:var(--disp);font-weight:600;font-size:15px;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-family:var(--mono);color:var(--violet);font-size:16px}
+  .faq details[open] summary::after{content:"\\2013"}
+  .faq details p{padding:0 0 14px;font-size:14px;line-height:1.5;color:var(--silver)}
+
+  /* snapshot grid (what we heard) */
+  .snap{display:flex;flex-direction:column;gap:12px}
+  .sb{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:14px 18px;box-shadow:var(--card-shadow)}
+  .sb ul{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:6px}
+  .sb li{position:relative;padding-left:16px;font-size:14px;line-height:1.45;color:var(--silver)}
+  .sb li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+  .sb:first-child li{color:var(--fg)}
+  [data-title="Our promise"] .flow{grid-template-columns:repeat(4,1fr)}
+  [data-title="Our promise"] .fstep h3{font-size:18px}
+  [data-title="Our promise"] .fstep p{font-size:14px}
+
+  /* strategic objectives */
+  .objs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+  .obj{padding:20px 22px;display:flex;flex-direction:column}
+  .obj.wide{grid-column:1 / -1;display:grid;grid-template-columns:auto 1fr 1fr;gap:6px 28px;align-items:start}
+  .obj.wide .k{grid-column:1 / -1}
+  .obj h3{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-0.015em;margin-top:8px;line-height:1.2}
+  .obj p{color:var(--silver);font-size:15px;line-height:1.5;margin-top:8px}
+  .obj .ms{margin-top:auto;padding-top:12px;border-top:1px solid var(--hair);font-size:14px;line-height:1.45;color:var(--fg)}
+  .obj.wide .ms{margin-top:8px;border-top:none;padding-top:0}
+  .obj .ms b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:4px}
+
+  /* content funnel */
+  .funnel{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:24px}
+  .fn{padding:16px 16px;display:flex;flex-direction:column;position:relative}
+  .fn .when{font-size:11.5px;color:var(--dim);margin-top:4px}
+  .fn h3{font-family:var(--disp);font-weight:600;font-size:16px;letter-spacing:-0.01em;margin-top:8px;line-height:1.2}
+  .fn .post{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--paper);border:1px solid var(--hair)}
+  .fn .hook{font-size:12px;line-height:1.45;color:var(--fg);font-style:italic}
+  .fn .fmt{font-size:11px;line-height:1.4;color:var(--dim);margin-top:8px}
+  .fn .job{margin-top:auto;padding-top:10px;font-size:11.5px;line-height:1.4;color:var(--silver)}
+  .fn .job b{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:2px}
+  .fn:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:6px;height:6px;border-top:1.5px solid var(--violet);border-right:1.5px solid var(--violet);transform:translateY(-50%) rotate(45deg)}
+
+  /* two ways */
+  .ways{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}
+  .way{padding:24px 26px;display:flex;flex-direction:column}
+  .way.feat{border-color:var(--violet)}
+  .way h3{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.02em;margin-top:8px;line-height:1.1}
+  .way .sub{color:var(--silver);font-size:14px;margin-top:6px;margin-bottom:16px}
+  .way .fit{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair);font-size:14.5px;line-height:1.45;color:var(--fg)}
+  .way .fit b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:4px}
+
+  /* calculator assumptions */
+  .assump{margin-top:16px;border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:0 18px}
+  .assump summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:13px 0;cursor:pointer}
+  .assump summary::-webkit-details-marker{display:none}
+  .assump .tog{font-size:13px;color:var(--dim)}
+  .assump .tog::after{content:" assumptions"}
+  .assump[open] .tog::before{content:"Hide"}
+  .assump:not([open]) .tog::before{content:"Show"}
+  .assump .tog{font-size:0}
+  .assump .tog::before,.assump .tog::after{font-size:13px}
+  .assump ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 22px;padding:2px 0 16px}
+  .assump li{font-size:14px;line-height:1.5;color:var(--silver)}
+  .assump li b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--fg);font-weight:400;margin-bottom:4px}
+  .roi-in{gap:16px}
+
+  /* what already exists */
+  .exists{display:grid;grid-template-columns:1.05fr 0.95fr;gap:30px;margin-top:24px;align-items:start}
+  .shot .ph.wide{aspect-ratio:16/9}
+  .xlist{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .xlist li{position:relative;padding-left:28px;color:var(--silver);font-size:15px;line-height:1.5}
+  .xlist li::before{content:"";position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;border:1px dashed var(--violet)}
+
+  /* before / after table + signals */
+  .ba{overflow:hidden}
+  .ba .r{display:grid;grid-template-columns:0.7fr 1fr 1.2fr}
+  .ba .r+.r{border-top:1px solid var(--hair)}
+  .ba .r.head{background:var(--paper)}
+  .ba .c{padding:11px 14px;font-size:14px;line-height:1.4;color:var(--silver)}
+  .ba .r.head .c{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet)}
+  .ba .c.k{font-family:var(--disp);font-weight:600;color:var(--fg);font-size:13.5px;letter-spacing:0;text-transform:none}
+  .ba .r:not(.head) .c:last-child{color:var(--fg);font-weight:500;border-left:1px solid var(--hair)}
+  .sig{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:14px}
+  .sig li{counter-increment:s;position:relative;padding-left:48px;font-size:14.5px;line-height:1.5;color:var(--silver)}
+  .sig li b{display:block;color:var(--fg);font-weight:600;margin-bottom:2px}
+  .sig li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:2px;width:32px;height:32px;border-radius:50%;border:1px solid var(--violet);color:var(--violet);font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center}
+
+  /* outcome tiles */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px;max-width:980px;margin-left:auto;margin-right:auto;text-align:left}
+  .tile{padding:24px 24px}
+  .tile h3{font-family:var(--disp);font-weight:600;font-size:19px;letter-spacing:-0.015em;margin-top:10px;line-height:1.2}
+  .tile p{color:var(--silver);font-size:15px;line-height:1.5;margin-top:10px}
+
+  /* three columns (framework, how it runs) */
+  .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+  .fstep{padding:24px 24px;display:flex;flex-direction:column}
+  .fstep h3{font-family:var(--disp);font-weight:600;font-size:21px;line-height:1.15;letter-spacing:-0.02em;margin:12px 0 0}
+  .fstep .job{color:var(--fg);font-size:15px;line-height:1.5;margin-top:10px;font-weight:500}
+  .fstep p{color:var(--silver);font-size:15px;line-height:1.5;margin-top:10px}
+  .fstep .eg{margin-top:14px;padding:13px 15px;border-radius:12px;background:var(--paper);border:1px solid var(--hair);font-size:14px;line-height:1.5;color:var(--silver)}
+  .fstep .eg b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:5px}
+  .fstep .cnt{margin-top:auto;padding-top:16px;font-family:var(--disp);font-weight:600;font-size:30px;letter-spacing:-0.03em;color:var(--violet)}
+  .fstep .cnt span{font-family:var(--mono);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim);margin-left:8px;font-weight:400}
+
+  /* timeline 4 up */
+  .tl{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+  .tlcard{padding:24px 22px;display:flex;flex-direction:column;position:relative}
+  .tlcard .d{font-family:var(--disp);font-weight:600;font-size:23px;letter-spacing:-0.02em;margin-top:10px;line-height:1.1}
+  .tlcard ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:8px}
+  .tlcard li{position:relative;padding-left:16px;color:var(--silver);font-size:14.5px;line-height:1.45}
+  .tlcard li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+  .tlcard .goal{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair);font-size:14px;line-height:1.45;color:var(--fg)}
+  .tlcard .goal b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:4px}
+
+  /* split + checklists */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:24px;align-items:start}
+  .blocklbl{font-family:var(--mono);font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--violet);margin-bottom:14px}
+  .chk{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .chk li{position:relative;padding-left:28px;color:var(--silver);font-size:15px;line-height:1.5}
+  .chk li strong{color:var(--fg);font-weight:600}
+  .chk li::before{content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:5px;border:1px solid var(--violet);background:rgba(131,102,255,0.14)}
+  .chk li::after{content:"";position:absolute;left:5.5px;top:6px;width:4px;height:7px;border:solid var(--violet);border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .note{margin-top:18px;border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:13px 16px;font-size:14px;color:var(--dim);line-height:1.5}
+  .note b{font-family:var(--mono);letter-spacing:0.1em;text-transform:uppercase;font-size:10.5px;color:var(--violet);font-weight:400}
+
+  /* terms list */
+  .terms{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:24px;max-width:78ch}
+  .terms li{position:relative;padding-left:30px;color:var(--silver);font-size:15.5px;line-height:1.55}
+  .terms li strong{color:var(--fg);font-weight:600}
+  .terms li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--violet)}
+
+  /* audit table */
+  .score{margin-top:22px;border:1px solid var(--hair);border-radius:18px;overflow:hidden;background:var(--lift);box-shadow:var(--card-shadow)}
+  .score .row{display:grid;grid-template-columns:minmax(180px,0.8fr) 1.6fr}
+  .score .row+.row{border-top:1px solid var(--hair)}
+  .score .row.head{background:var(--paper)}
+  .score .c{padding:12px 20px;font-size:15px;line-height:1.4}
+  .score .c.k{font-family:var(--disp);font-weight:600;color:var(--fg);font-size:14.5px;border-right:1px solid var(--hair);letter-spacing:0;text-transform:none}
+  .score .c.v{color:var(--silver)}
+  .score .row.head .c{font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet)}
+
+  /* proof: meetings */
+  .proofhead{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  .bignum{font-family:var(--disp);font-weight:600;font-size:clamp(64px,9vw,116px);letter-spacing:-0.05em;line-height:0.95}
+  .bignum small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-top:10px}
+  .cases{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+  .case{padding:24px 26px;display:flex;flex-direction:column}
+  .case h3{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-0.02em;margin-top:10px;line-height:1.2}
+  .case p{color:var(--silver);font-size:15px;line-height:1.55;margin-top:10px}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .metric{border-top:1px solid var(--hair);padding-top:12px}
+  .metric .mv{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-0.03em;line-height:1;color:var(--fg)}
+  .metric .ml{font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+  .case .src{margin-top:auto;padding-top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.08em;color:var(--dim)}
+  .case .src a{color:var(--violet)}
+
+  /* quotes */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+  .q{padding:24px 24px;display:flex;flex-direction:column;background-image:radial-gradient(120% 100% at 50% 0%,var(--tint),transparent 50%)}
+  .q .mark{font-family:var(--disp);font-size:48px;line-height:0.6;color:var(--violet);margin-bottom:16px}
+  .q p{color:var(--fg);font-size:14.5px;line-height:1.6}
+  .q .who{margin-top:auto;padding-top:18px;font-size:13px;color:var(--silver)}
+  .q .who b{display:block;color:var(--fg);font-weight:600}
+  .q .who span{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);display:block;margin-top:4px}
+
+  /* ROI calculator */
+  .roi{display:grid;grid-template-columns:1fr 1.05fr;gap:24px;margin-top:26px;align-items:stretch}
+  .roi-in{padding:26px 28px;display:flex;flex-direction:column;gap:22px}
+  .ctl label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;color:var(--fg);font-weight:500}
+  .ctl label output{font-family:var(--disp);font-weight:600;font-size:22px;letter-spacing:-0.02em;color:var(--violet);white-space:nowrap}
+  .ctl .hint{font-size:12.5px;color:var(--dim);margin-top:2px}
+  .ctl input[type=range]{width:100%;margin-top:12px;-webkit-appearance:none;appearance:none;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--violet) var(--pct,50%),var(--paper-lift) var(--pct,50%));outline:none}
+  .ctl input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--lift);border:2px solid var(--violet);box-shadow:0 2px 8px rgba(20,19,24,0.18);cursor:pointer}
+  .ctl input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--lift);border:2px solid var(--violet);box-shadow:0 2px 8px rgba(20,19,24,0.18);cursor:pointer}
+  .roi-out{padding:26px 28px;display:flex;flex-direction:column;background:var(--ink);color:#F4F4F3;border-color:transparent;
+    background-image:radial-gradient(120% 90% at 100% 0%,rgba(131,102,255,0.35),transparent 55%)}
+  .roi-out .k{color:#B7A7FF}
+  .roi-out .hero{margin-top:14px}
+  .roi-out .hero .hv{font-family:var(--disp);font-weight:600;font-size:clamp(44px,5.6vw,72px);letter-spacing:-0.045em;line-height:1;color:#FFFFFF}
+  .roi-out .hero .hl{font-size:15px;color:#B9B8C4;margin-top:8px;line-height:1.5;max-width:40ch}
+  .roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+  .roi-cell{border-top:1px solid rgba(236,235,241,0.14);padding-top:12px}
+  .roi-cell .cv{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-0.03em;line-height:1;color:#FFFFFF}
+  .roi-cell .cl{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#9B9AA6;margin-top:7px}
+  .roi-out .foot{margin-top:auto;padding-top:18px;font-size:13.5px;color:#9B9AA6;line-height:1.5}
+
+  /* investment */
+  .tiers{display:grid;grid-template-columns:1.25fr 0.9fr 0.9fr;gap:20px;margin-top:26px}
+  .tier{padding:24px 24px;display:flex;flex-direction:column;background-image:radial-gradient(120% 100% at 50% 0%,var(--tint),transparent 46%)}
+  .tier.feat{border-color:var(--violet)}
+  .tier-sec{font-size:14.5px;color:var(--dim);margin-top:6px}
+  .tier-price{font-family:var(--disp);font-weight:600;font-size:clamp(30px,3.6vw,42px);letter-spacing:-0.035em;line-height:1;margin-top:16px}
+  .tier-price span{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;color:var(--dim);text-transform:uppercase;margin-left:6px}
+  .tier-mo{font-family:var(--disp);font-weight:600;font-size:15px;color:var(--silver);margin-top:8px}
+  .tier ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:8px}
+  .tier li{position:relative;padding-left:16px;color:var(--silver);font-size:14.5px;line-height:1.45}
+  .tier li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+  .tier .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim);margin-top:auto;padding-top:16px}
+  .pay{margin-top:20px;border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:15px 18px;font-size:14px;color:var(--silver)}
+  .pay b{color:var(--fg);font-weight:600}
+
+  /* next steps + close */
+  .nsteps{list-style:none;counter-reset:n;display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;margin:26px auto 0;text-align:left;max-width:820px}
+  .nsteps li{counter-increment:n;position:relative;padding-left:48px;color:var(--silver);font-size:15px;line-height:1.4;min-height:34px;display:flex;align-items:center}
+  .nsteps li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid var(--violet);color:var(--violet);font-family:var(--mono);font-size:12px;display:flex;align-items:center;justify-content:center}
+  .close h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.8vw,56px);letter-spacing:-0.035em;line-height:1.04;max-width:20ch;margin:0 auto}
+  .closebar{margin-top:40px;padding-top:26px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;max-width:880px;margin-left:auto;margin-right:auto}
+  .closebar .mk{font-family:var(--disp);font-weight:600;font-size:30px;letter-spacing:-0.04em}
+  .closebar .mk .dot{color:var(--violet)}
+  .closebar .links{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--silver)}
+  .closebar .links a:hover{color:var(--fg)}
+  .closebar .links .muted{color:var(--dim);cursor:default}
+  .fine{font-size:11.5px;color:var(--dim);margin-top:18px;line-height:1.5}
+
+  /* controls */
+  .controls{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.8);backdrop-filter:blur(14px);border:1px solid var(--hair);border-radius:999px;padding:8px 12px;box-shadow:var(--card-shadow)}
+  .ctrl-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--hair-strong);background:transparent;color:var(--fg);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,background .2s}
+  .ctrl-btn:hover:not(:disabled){border-color:var(--fg);background:var(--surface-hover)}
+  .ctrl-btn:disabled{opacity:0.3;cursor:default}
+  .counter{font-family:var(--mono);font-size:12px;color:var(--silver);min-width:52px;text-align:center}
+  .kb-hint{position:fixed;bottom:24px;right:24px;z-index:40;font-family:var(--mono);font-size:11px;color:var(--dim)}
+  .kb-hint kbd{border:1px solid var(--hair-strong);border-radius:5px;padding:1px 5px;margin:0 1px}
+
+  @media (max-width:1040px){
+    .tl,.funnel,[data-title="Our promise"] .flow{grid-template-columns:1fr 1fr}
+    .fn::after{display:none}
+    .assump ul{grid-template-columns:1fr 1fr}
+    .stages{grid-template-columns:repeat(5,1fr)}
+    .proofgrid{grid-template-columns:1fr}
+    .strip{grid-template-columns:1fr 1fr}
+    .cmp .r{grid-template-columns:1.2fr 1fr 1fr 1fr 1fr}
+    .tiers,.quotes{grid-template-columns:1fr}
+    .roi{grid-template-columns:1fr}
+  }
+  @media (max-width:860px){
+    .flow,.shots,.tiles,.cases,.objs,.ways,.funnel,.stagepanel,[data-title="Our promise"] .flow{grid-template-columns:1fr}
+    .stages{grid-template-columns:1fr 1fr}
+    .stg::after{display:none}
+    .strip,.tl.mo,.terms2{grid-template-columns:1fr}
+    .tl.mo .tlcard{display:flex;flex-direction:column}
+    .tl.mo .tlcard .goal{border-left:none;padding-left:0;border-top:1px solid var(--hair);padding-top:12px;margin-top:12px}
+    .cells{grid-template-columns:auto repeat(3,1fr)}
+    .cmp{overflow-x:auto}
+    .cmp .r{min-width:720px}
+    .postmock{border-right:none;border-bottom:1px solid var(--hair)}
+    .bar{grid-template-columns:110px 1fr 36px}
+    .obj.wide{display:flex}
+    .assump ul{grid-template-columns:1fr}
+    .split,.opp,.exists{grid-template-columns:1fr;gap:24px}
+  }
+  @media (max-width:680px){
+    .slide{padding:84px 20px 96px}
+    .tl,.nsteps,.metrics{grid-template-columns:1fr}
+    .score .row{grid-template-columns:1fr}
+    .score .c.k{border-right:none;border-bottom:1px solid var(--hair)}
+    .kb-hint{display:none}
+    .nav-for span{display:none}
+    .closebar{justify-content:center;text-align:center}
+    .lockup .mk{font-size:30px}
+    .lockup img{width:48px;height:48px;border-radius:12px}
+  }
+
+  /* v7: diagnosis, mechanism, proof, scope */
+  .diag{display:grid;grid-template-columns:1.05fr 0.95fr;gap:28px;margin-top:22px;align-items:start}
+  .dlist{display:flex;flex-direction:column;gap:10px}
+  .dl{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:13px 16px;box-shadow:var(--card-shadow);display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:start}
+  .dl .k{grid-row:1 / span 2;align-self:center;min-width:26px}
+  .dl b{font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:-0.01em;color:var(--fg)}
+  .dl p{font-size:13.5px;line-height:1.45;color:var(--silver)}
+  .thesis{margin-top:18px;border-left:3px solid var(--violet);padding:4px 0 4px 18px;font-family:var(--disp);font-weight:600;font-size:clamp(17px,1.8vw,21px);line-height:1.35;letter-spacing:-0.015em;max-width:60ch}
+  .mech{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+  .ms{padding:20px 22px;display:flex;flex-direction:column;position:relative}
+  .ms .num{font-family:var(--disp);font-weight:600;font-size:34px;letter-spacing:-0.04em;line-height:1;color:var(--violet)}
+  .ms h3{font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:-0.015em;margin-top:10px;line-height:1.2}
+  .ms p{font-size:14px;line-height:1.5;color:var(--silver);margin-top:8px}
+  .ms .out{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--fg);border-top:1px solid var(--hair);margin-top:12px}
+  .ms .out b{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;display:block;margin-bottom:3px}
+  .proof3{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:16px;margin-top:22px;align-items:stretch}
+  .pc{overflow:hidden;display:flex;flex-direction:column}
+  .pc .body{padding:16px 18px;display:flex;flex-direction:column;flex:1}
+  .pc h3{font-family:var(--disp);font-weight:600;font-size:17px;letter-spacing:-0.015em;line-height:1.2;margin-top:6px}
+  .pc p{font-size:13.5px;line-height:1.45;color:var(--silver);margin-top:8px}
+  .pc .metrics{margin-top:12px}
+  .pc .metric .mv{font-size:22px}
+  .receipts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .receipts img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--hair);background:var(--paper-lift)}
+  .ba2{display:flex;flex-direction:column;gap:8px}
+  .ba2 .row{border:1px solid var(--hair);border-radius:10px;padding:10px 12px;background:var(--paper);font-size:13px;line-height:1.45;color:var(--silver)}
+  .ba2 .row b{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);font-weight:400;margin-bottom:3px}
+  .ba2 .row.after{background:var(--lift);color:var(--fg);border-color:var(--violet)}
+  .ba2 .row.after b{color:var(--violet)}
+  .qstrip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px}
+  .qs{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:12px 14px;font-size:13px;line-height:1.45;color:var(--silver);display:flex;gap:10px;align-items:flex-start}
+  .qs img{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:none}
+  .qs b{display:block;color:var(--fg);font-weight:600;font-size:12.5px;margin-top:4px}
+  .scope{display:grid;grid-template-columns:1.15fr 0.85fr;gap:22px;margin-top:20px;align-items:start}
+  .dt{overflow:hidden}
+  .dt .r{display:grid;grid-template-columns:1.2fr 0.8fr 1fr;align-items:center}
+  .dt .r+.r{border-top:1px solid var(--hair)}
+  .dt .r>div{padding:9px 14px;font-size:13.5px;color:var(--silver);line-height:1.4}
+  .dt .r>div:first-child{color:var(--fg);font-weight:500}
+  .dt .r>div:nth-child(2){font-family:var(--disp);font-weight:600;color:var(--fg)}
+  .dt .r.head{background:var(--paper)}
+  .dt .r.head>div{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400}
+  .bounds{display:flex;flex-direction:column;gap:8px}
+  .bounds .bd,.tcol .bd{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:11px 14px;font-size:13.5px;line-height:1.45;color:var(--silver)}
+  .bounds .bd b,.tcol .bd b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:3px}
+  .one{display:grid;grid-template-columns:1.2fr 0.8fr;gap:22px;margin-top:22px;align-items:stretch}
+  .rec{padding:26px 28px;border-color:var(--violet);display:flex;flex-direction:column}
+  .rec .big{font-family:var(--disp);font-weight:600;font-size:clamp(40px,5vw,60px);letter-spacing:-0.045em;line-height:1;margin-top:10px}
+  .rec .big span{font-family:var(--mono);font-size:12px;letter-spacing:0.12em;color:var(--dim);text-transform:uppercase;margin-left:10px}
+  .rec .tl2{font-size:15px;color:var(--fg);margin-top:8px;font-weight:500}
+  .rec ul{list-style:none;margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+  .rec li{position:relative;padding-left:16px;color:var(--silver);font-size:14px;line-height:1.45}
+  .rec li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+  .rec .why{margin-top:auto;padding-top:16px;border-top:1px solid var(--hair);font-size:13.5px;line-height:1.5;color:var(--silver)}
+  .rec .why b{color:var(--fg);font-weight:600}
+  .tcol{display:flex;flex-direction:column;gap:10px}
+  .tcol .bd{flex:1}
+  .later{margin-top:16px;border:1px dashed var(--hair-strong);border-radius:12px;padding:12px 16px;font-size:13px;color:var(--dim);line-height:1.5;display:flex;gap:18px;flex-wrap:wrap;align-items:baseline}
+  .later b{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400}
+  .later span{color:var(--silver)}
+  .rr{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+  .rr .fstep h3{font-size:19px}
+  .rr .fstep p{font-size:14.5px}
+  .closegrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px;max-width:960px;margin-left:auto;margin-right:auto;text-align:left}
+  .cg{padding:22px 24px}
+  .cg h3{font-family:var(--disp);font-weight:600;font-size:19px;letter-spacing:-0.015em;margin-top:8px}
+  .cg ol{list-style:none;counter-reset:c;margin-top:12px;display:flex;flex-direction:column;gap:9px}
+  .cg li{counter-increment:c;position:relative;padding-left:32px;font-size:14px;line-height:1.45;color:var(--silver)}
+  .cg li::before{content:counter(c);position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;border:1px solid var(--violet);color:var(--violet);font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center}
+  @media (max-width:1040px){body:not(.staged) .mech,body:not(.staged) .proof3,body:not(.staged) .rr{grid-template-columns:1fr 1fr}body:not(.staged) .qstrip{grid-template-columns:1fr}}
+  @media (max-width:860px){body:not(.staged) .diag,body:not(.staged) .scope,body:not(.staged) .one,body:not(.staged) .closegrid,body:not(.staged) .mech,body:not(.staged) .proof3,body:not(.staged) .rr{grid-template-columns:1fr}body:not(.staged) .rec ul{grid-template-columns:1fr}}
+
+  /* ported from v6.2: executive team + six posts */
+  /* v6.1: executive team, vision, our own posts */
+  .team .shot .cap ul.gaps{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:6px}
+  .team .gaps li{position:relative;padding-left:16px;font-size:13.5px;line-height:1.45;color:var(--silver)}
+  .team .gaps li::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--violet)}
+  .team .shot .ph{aspect-ratio:16/10}
+  .shot .ph img.fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+  .shot .ph:not(.missing) img.fb{display:none}
+  .shot .ph.missing img.fb ~ .empty{display:none}
+  .thesis.reveal{margin-top:20px}
+  /* diagnosis list + thesis (ported from v7) */
+  .diag{display:grid;grid-template-columns:1.05fr 0.95fr;gap:28px;margin-top:22px;align-items:start}
+  [data-title="How we do it ourselves"] .shot .ph.tall{height:clamp(240px,36vh,340px);background:#0F0E13}
+  [data-title="How we do it ourselves"] .shot .ph img{object-fit:contain;object-position:center}
+  /* the feed: six real posts by funnel stage */
+  .feed{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;align-items:start}
+  [data-title="How we do it ourselves"] .sec-lead{margin-top:12px;max-width:74ch}
+  .stage{display:flex;flex-direction:column;gap:10px}
+  .sh{padding:0 2px 2px}
+  .sh b{display:block;font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:-0.01em;margin-top:4px}
+  .sh span:not(.k){display:block;font-size:12px;color:var(--dim);margin-top:2px}
+  .lp{border:1px solid var(--hair);border-radius:12px;background:#fff;box-shadow:var(--card-shadow);overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.9)}
+  .lp .real{display:none;width:100%}
+  .lp.has-real .real{display:block}
+  .lp.has-real .rend{display:none}
+  .lp .rend{padding:9px 11px 9px}
+  .lp-h{display:flex;gap:8px;align-items:center}
+  .lp-h img{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:top;background:#e9e5df;flex:none}
+  .lp-h b{display:block;font-size:12.5px;font-weight:600;line-height:1.2}
+  .lp-h span{display:block;font-size:10.5px;color:rgba(0,0,0,0.6);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
+  .lp-t{font-size:12.5px;line-height:1.35;margin-top:8px}
+  .lp-t b{font-weight:600}
+  .lp-img{display:block;width:100%;height:96px;object-fit:cover;object-position:center 12%;border-radius:8px;margin-top:8px}
+  .lp-q{margin-top:8px;border-radius:8px;background:#0b0b0b;color:#eee;padding:10px 12px;font-size:11.5px;line-height:1.35}
+  .lp-q b{display:block;font-size:12px;margin-bottom:2px}
+  .lp-q span{display:inline-block;font-size:13.5px;font-weight:600;color:#fff;border:2px solid #e33;border-radius:999px;padding:1px 8px;margin:3px 0}
+  .lp-tag{margin-top:8px;border-radius:8px;background:var(--paper);border:1px dashed var(--hair-strong);padding:9px 11px;font-size:11.5px;line-height:1.35;color:var(--silver)}
+  .lp-m{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:9px;padding-top:8px;border-top:1px solid rgba(0,0,0,0.08);font-size:11px;color:rgba(0,0,0,0.6)}
+  .lp-m b{font-family:var(--disp);font-weight:600;font-size:12.5px;color:var(--violet);white-space:nowrap}
+  .lp-next{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:11px 13px;font-size:12.5px;line-height:1.4;color:var(--silver)}
+  .lp-next b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--violet);font-weight:400;margin-bottom:3px}
+  .feed-in{display:grid;grid-template-columns:auto auto auto 1fr;gap:18px;align-items:center;margin-top:12px;border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:12px 18px;box-shadow:var(--card-shadow)}
+  .feed-in>div:not(.tx) b{display:block;font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.03em;line-height:1;color:var(--violet)}
+  .feed-in>div:not(.tx) span{display:block;font-size:11.5px;color:var(--dim);margin-top:3px;max-width:170px;line-height:1.3}
+  .feed-in .tx{font-size:13px;line-height:1.45;color:var(--fg);border-left:1px solid var(--hair);padding-left:18px}
+  .feed.six{grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+  .feed.six .stage{min-width:0}
+  .feed.six .lp{min-width:0}
+  .feed.six .lp .real{width:100%;max-height:470px;object-fit:contain;object-position:top center;display:none}
+  .feed.six .lp.has-real .real{display:block}
+  .feed.six .lp.has-real{background:transparent;border:none;box-shadow:none;border-radius:0}
+  .feed.six .lp-h span{max-width:100%}
+  [data-title="How we do it ourselves"] .sec-lead{max-width:80ch}
+  .feed.six .lp-t{font-size:12px}
+  .feed.six .lp-m{flex-direction:column;align-items:flex-start;gap:3px}
+  .feed.six .lp-m span{font-size:10.5px;line-height:1.3}
+  .feed.six .lp-m b{font-size:12px}
+  .feed.six .lp-img{height:110px}
+  .feed.six .sh b{font-size:13.5px}
+  .feed.six .sh span:not(.k){font-size:11px}
+  .lp.has-real{border-radius:10px}
+  .lp .real{width:100%;height:auto}
+  .impcap{margin-top:8px;padding:8px 10px;border:1px solid var(--hair);border-radius:10px;background:var(--lift);box-shadow:var(--card-shadow)}
+  .impcap b{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-0.03em;color:var(--violet);line-height:1}
+  .impcap span{font-family:var(--mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);margin-left:6px}
+  .impcap em{display:block;font-style:normal;font-size:11px;color:var(--silver);margin-top:3px;line-height:1.3}
+  .feed.six .lp .real{max-height:430px}
+  @media (max-width:1100px){body:not(.staged) .feed.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media (max-width:600px){body:not(.staged) .feed.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+  .shots.team.four{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .shots.team.four .shot .ph{aspect-ratio:3/2}
+  .shots.team.four .shot .ph img{object-position:top left}
+  .shots.team.four .shot .cap{padding:14px 16px 16px}
+  .shots.team.four .shot .cap h3{font-size:17px;margin-top:0}
+  .shots.team.four .shot .cap .role{font-size:13.5px;line-height:1.4;color:var(--silver);margin-top:5px}
+  .shots.team.four .gaps li{font-size:12.5px}
+  @media (max-width:1100px){body:not(.staged) .shots.team.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+  /* ported: content funnel */
+
+  @media (max-width:860px){body:not(.staged) .stagepanel{grid-template-columns:1fr}body:not(.staged) .stages{grid-template-columns:1fr 1fr}body:not(.staged) .stg::after{display:none}body:not(.staged) .postmock{border-right:none;border-bottom:1px solid var(--hair)}}
+
+  /* v8 additions */
+  .v8list{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .v8list li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.45;color:var(--silver)}
+  .v8list li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--violet)}
+  .v8list li strong{color:var(--fg);font-weight:600}
+  .col3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:22px;align-items:start}
+  .col4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px;align-items:stretch}
+  .col2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px;align-items:start}
+  .blk{padding:20px 22px;display:flex;flex-direction:column}
+  .blk h3{font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:-0.015em;line-height:1.2;margin-top:8px}
+  .blk p{font-size:14px;line-height:1.5;color:var(--silver);margin-top:8px}
+  .blk .v8list{margin-top:10px}
+  .blk .v8list li{font-size:13.5px}
+  .statement{font-family:var(--disp);font-weight:600;font-size:clamp(20px,2.2vw,28px);line-height:1.25;letter-spacing:-0.02em;color:var(--fg);border-left:3px solid var(--violet);padding-left:18px;margin:6px 0 12px}
+  .cover-bullets{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  .cover-bullets span{border:1px solid var(--hair-strong);border-radius:999px;padding:8px 16px;font-size:13.5px;color:var(--fg);background:var(--lift)}
+  .team.four.mini .shot .ph{aspect-ratio:2/1}
+  .team.four.mini .shot .cap{padding:10px 14px 12px}
+  .team.four.mini .shot .cap h3{font-size:15px}
+  .team.four.mini .shot .cap .role{font-size:12.5px;margin-top:2px}
+  .ev{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .ev .sv b{font-size:clamp(30px,3.2vw,44px)}
+  .ev .sv span{font-size:13.5px}
+  .anal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+  .anal .shot .ph{aspect-ratio:16/10}
+  .foot-disc{margin-top:14px;font-size:13px;line-height:1.5;color:var(--dim);border-top:1px solid var(--hair);padding-top:12px}
+  .decide{margin-top:16px;border:1px solid var(--violet);border-radius:14px;background:var(--lift);padding:14px 18px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;box-shadow:var(--card-shadow)}
+  .decide b{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-0.02em;white-space:nowrap}
+  .decide span{font-size:14.5px;line-height:1.5;color:var(--silver)}
+  .rec ul.inc{grid-template-columns:1fr 1fr}
+  .the-decision{max-width:70ch;margin:22px auto 0;font-size:15.5px;line-height:1.55;color:var(--silver)}
+  .the-decision b{color:var(--fg);font-weight:600}
+  @media (max-width:1040px){body:not(.staged) .col3,body:not(.staged) .col4{grid-template-columns:1fr 1fr}}
+  @media (max-width:860px){body:not(.staged) .col3,body:not(.staged) .col4,body:not(.staged) .col2,body:not(.staged) .ev{grid-template-columns:1fr}}
+
+  /* v8.1 visual pass */
+  .outc{display:grid;grid-template-columns:0.95fr 1.05fr;gap:26px;margin-top:20px;align-items:start}
+  .browser{overflow:hidden;margin:0}
+  .browser .bbar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:#E9EAEC;border-bottom:1px solid var(--hair)}
+  .browser .bbar i{width:9px;height:9px;border-radius:50%;background:#C9C8D2}
+  .browser .bbar span{margin-left:8px;font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim)}
+  .browser img{display:block;width:100%;height:230px;object-fit:cover;object-position:top}
+  .browser.small{margin-top:12px}
+  .browser.small img{height:120px;object-position:center 40%}
+  .browser figcaption{padding:12px 16px 14px;font-size:13.5px;line-height:1.45;color:var(--silver)}
+  .browser figcaption b{color:var(--fg);font-weight:600}
+  .outs{list-style:none;counter-reset:o;display:flex;flex-direction:column;gap:9px;margin-top:10px}
+  .outs li{counter-increment:o;position:relative;padding:10px 14px 10px 50px;border:1px solid var(--hair);border-radius:12px;background:var(--lift);box-shadow:var(--card-shadow)}
+  .outs li::before{content:counter(o,decimal-leading-zero);position:absolute;left:14px;top:12px;font-family:var(--disp);font-weight:600;font-size:16px;color:var(--violet)}
+  .outs li b{display:block;font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:-0.01em}
+  .outs li span{display:block;font-size:13px;line-height:1.45;color:var(--silver);margin-top:2px}
+  .track{position:relative;height:6px;margin:18px 8px 0;border-radius:999px;background:var(--paper-lift);display:flex;justify-content:space-between}
+  .track i{width:14px;height:14px;border-radius:50%;background:var(--violet);border:3px solid var(--bg);margin-top:-4px;box-shadow:0 0 0 2px var(--violet)}
+  .stages{margin-top:14px}
+  .stg{gap:4px;padding:12px 14px}
+  .stg .k{font-size:9.5px}
+  .stg small{white-space:normal;line-height:1.35;font-size:11.5px;color:var(--silver)}
+  .stg em{font-style:normal;font-size:11px;color:var(--violet);line-height:1.3;margin-top:2px}
+  .stagepanel{margin-top:12px}
+  .stagepanel .postmock{padding:18px 22px}
+  .pm-text{font-size:14px;margin-top:12px}
+  .stageinfo{padding:18px 22px;gap:10px}
+  .stageinfo h3{font-size:19px}
+  .anal3{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:16px;margin-top:20px;align-items:stretch}
+  .anal3 .shot img{width:100%;height:300px;object-fit:cover;object-position:top}
+  .anal3 figcaption{padding:12px 16px 14px}
+  .anal3 figcaption b{display:block;font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:-0.01em}
+  .anal3 figcaption span{display:block;font-size:13px;color:var(--silver);line-height:1.45;margin-top:3px}
+  .evrow{display:grid;grid-template-columns:auto auto auto 1fr;gap:14px;margin-top:16px;align-items:stretch}
+  .evrow .sv{padding:14px 18px;max-width:230px}
+  .evrow .sv b{font-size:30px}
+  .evrow .sv span{font-size:12.5px;line-height:1.4;margin-top:6px}
+  .evtx{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:14px 18px;font-size:13px;line-height:1.5;color:var(--silver);box-shadow:var(--card-shadow)}
+  .evtx b{color:var(--fg);font-weight:600}
+  .feed.six .lp.has-real{position:relative;overflow:visible}
+  .feed.six .lp.has-real .real{transition:transform .25s ease,box-shadow .25s ease;transform-origin:top center;border-radius:10px}
+  .feed.six .lp.has-real:hover{z-index:20}
+  .feed.six .lp.has-real:hover .real{transform:scale(1.7);box-shadow:0 24px 60px rgba(20,19,24,0.28)}
+  .feed.six .stage:nth-child(1) .lp.has-real .real{transform-origin:top left}
+  .feed.six .stage:nth-child(6) .lp.has-real .real{transform-origin:top right}
+  .impcap b{color:var(--fg)}
+  .feed-in>div:not(.tx) b{color:var(--fg)}
+  .feed.six .sh .k{color:var(--dim)}
+  .impcap span{color:var(--dim)}
+  .proof3.two{grid-template-columns:1.1fr 1fr}
+  .scope2{display:grid;grid-template-columns:1.25fr 0.85fr;gap:22px;margin-top:22px;align-items:start}
+  .dark{background:var(--ink);color:#F4F4F3;border-color:transparent;background-image:radial-gradient(120% 90% at 100% 0%,rgba(131,102,255,0.35),transparent 55%)}
+  .dark .k{color:#B7A7FF}
+  .scope2 .dark{padding:24px 26px}
+  .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-top:14px}
+  .dgrid>div{display:grid;grid-template-columns:34px 1fr;gap:2px 10px;padding:10px 0;border-top:1px solid rgba(236,235,241,0.12)}
+  .dgrid i{grid-row:1 / span 2;font-family:var(--disp);font-weight:600;font-size:18px;color:var(--violet);font-style:normal}
+  .dgrid b{font-family:var(--disp);font-weight:600;font-size:14.5px;color:#fff;letter-spacing:-0.01em}
+  .dgrid span{font-size:12.5px;color:#B9B8C4;line-height:1.4}
+  .scope2 .blk{padding:16px 18px}
+  .scope2 .chk li,.scope2 .xlist li{font-size:13.5px}
+  .scope2 .chk,.scope2 .xlist{gap:8px;margin-top:8px}
+  .timeline{margin-top:22px}
+  .tk{position:relative;height:6px;border-radius:999px;background:var(--paper-lift);margin:0 8% 18px}
+  .tk::before{content:"";position:absolute;left:0;top:0;height:100%;width:100%;border-radius:999px;background:linear-gradient(90deg,var(--violet),#B7A7FF)}
+  .tk span{position:absolute;left:var(--p);top:50%;width:16px;height:16px;border-radius:50%;background:var(--violet);border:3px solid var(--bg);transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--violet)}
+  .tcards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+  .tc{border:1px solid var(--hair);border-radius:14px;background:var(--lift);padding:14px 14px;box-shadow:var(--card-shadow);min-width:0}
+  .tc.m{background:linear-gradient(180deg,rgba(131,102,255,0.10),var(--lift) 60%);border-color:rgba(131,102,255,0.35)}
+  .tc b{display:block;font-family:var(--disp);font-weight:600;font-size:17px;letter-spacing:-0.015em;margin-top:6px;line-height:1.15}
+  .tc ul{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:6px}
+  .tc li{position:relative;padding-left:14px;font-size:12.5px;line-height:1.4;color:var(--silver)}
+  .tc li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--violet)}
+  .decide.dark{border-color:transparent}
+  .decide.dark b{color:#fff}
+  .decide.dark span{color:#B9B8C4}
+  @media (max-width:1100px){body:not(.staged) .tcards{grid-template-columns:repeat(3,minmax(0,1fr))}body:not(.staged) .anal3{grid-template-columns:1fr}body:not(.staged) .evrow{grid-template-columns:1fr 1fr}body:not(.staged) .outc,body:not(.staged) .scope2{grid-template-columns:1fr}}
+
+  .proc{margin-top:12px;padding:16px 18px}
+  .flow5{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px;position:relative}
+  .flow5::before{content:"";position:absolute;left:8%;right:8%;top:15px;height:1px;background:var(--hair-strong)}
+  .flow5 li{position:relative;text-align:center;padding-top:0}
+  .flow5 i{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#F4F4F3;font-style:normal;font-family:var(--disp);font-weight:600;font-size:13px;margin:0 auto;position:relative;z-index:1}
+  .flow5 b{display:block;font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:-0.01em;margin-top:8px;line-height:1.2}
+  .flow5 span{display:block;font-size:11.5px;color:var(--dim);margin-top:2px;line-height:1.3}
+  .portal-slot{margin-top:12px;box-shadow:none;border:none}
+  .portal-slot .ph{aspect-ratio:16/6;border-radius:10px}
+  .portal-slot .ph .empty{inset:8px}
+
+  .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+  .pgrid .browser img{height:150px;object-position:top left}
+  .pgrid .browser figcaption{padding:10px 12px 12px;font-size:12.5px;line-height:1.4}
+  .pgrid .browser .bbar{padding:6px 10px}
+  .outc{grid-template-columns:1.05fr 0.95fr}
+
+  /* ============================================================
+     v8.2 PORCELAIN PASS. Violet means one thing: "look here now".
+     Allowed on: the headline full stop, the active funnel marker,
+     the did. wordmark dot and the final CTA. Never on a surface,
+     a border, a track, a label, a bullet, an icon or a bar.
+     Contrast now comes from ink, hairlines, scale and whitespace.
+     ============================================================ */
+  :root{--tint:transparent;--hairline:rgba(20,19,24,0.12);--rule:#141018;--inset:#ECECEA;--bar-quiet:rgba(20,19,24,0.22);
+    --card-shadow:none;--card-shadow-hover:none;
+    --shadow-support:0 4px 6px -1px rgba(20,19,24,0.08),0 2px 4px -2px rgba(20,19,24,0.08);
+    --shadow-hero:0 1px 1px rgba(20,19,24,0.05),0 2px 2px rgba(20,19,24,0.05),0 4px 4px rgba(20,19,24,0.05),0 8px 8px rgba(20,19,24,0.05),0 16px 16px rgba(20,19,24,0.05)}
+  .progress{background:var(--ink)}
+  .slide.glow{background:var(--bg)}
+  .card{box-shadow:none;border-color:var(--hairline)}
+  .card:hover{transform:none;box-shadow:none;border-color:rgba(20,19,24,0.22)}
+  .pill,.month,.sb,.score,.dl,.feed-in,.impcap,.outs li,.evtx,.tc,.decide,.stg,.lockup img{box-shadow:none}
+  .sec-head.grad{background:none;-webkit-text-fill-color:var(--fg);color:var(--fg)}
+  /* mono labels: muted, never violet */
+  .eyebrow,.k,.statrow .l,.si b,.terms2 b,.obj .ms b,.fn .job b,.way .fit b,.fstep .eg b,.tlcard .goal b,.blocklbl,.note b,.later b,.lp-next b,
+  .bounds .bd b,.tcol .bd b,.dt .r.head>div,.tt .r.head>div,.cmp .r.head>div:last-child,.ba .r.head .c,.score .row.head .c,.ms .out b,.stg em,.dark .k{color:var(--dim)}
+  .eyebrow{color:var(--fg)}
+  /* bullets, numerals and marks: ink */
+  .sb li::before,.terms li::before,.tier li::before,.rec li::before,.tlcard li::before,.v8list li::before{background:var(--ink)}
+  .xlist li::before{border-color:var(--dim);border-style:solid;opacity:.55}
+  .team .gaps li::before{border-color:var(--ink)}
+  .chk li::before{border-color:var(--ink);background:var(--ink)}
+  .chk li::after{border-color:#fff}
+  .sig li::before,.nsteps li::before,.cg li::before{border-color:var(--ink);color:var(--ink)}
+  .outs li::before,.fstep .cnt,.ms .num,.lp-m b,.ctl label output,.faq summary::after,.q .mark,.dgrid i{color:var(--ink)}
+  .q .mark{opacity:.25}
+  .case .src a{color:var(--fg);text-decoration:underline;text-decoration-color:rgba(20,19,24,0.3)}
+  .fn:not(:last-child)::after{border-color:var(--ink)}
+  /* borders that used to be violet */
+  .shot.now,.way.feat,.tier.feat,.rec,.decide,.ba2 .row.after{border-color:var(--ink)}
+  .ba2 .row.after b{color:var(--fg)}
+  .thesis,.statement{border-left-color:var(--ink);border-left-width:2px}
+  /* washes */
+  .tt .r.tot{background:var(--inset)}
+  .cmp .r>div:last-child{background:var(--inset)}
+  .cmp .r.tot>div:last-child{background:#E2E2E0}
+  .dark{background-image:none}
+  .ctl input[type=range]{background:linear-gradient(90deg,var(--ink) var(--pct,50%),#DDDCDA var(--pct,50%))}
+  .ctl input[type=range]::-webkit-slider-thumb{border-color:var(--ink)}
+  .ctl input[type=range]::-moz-range-thumb{border-color:var(--ink)}
+  /* charts: quiet bars, the argument bar in solid ink */
+  .bar i::after{background:var(--bar-quiet)}
+  .bar.me i::after{background:var(--ink)}
+  .bar.me b{color:var(--fg)}
+  .legend span::before{background:var(--bar-quiet)}
+  .legend span.me::before{background:var(--ink)}
+  .month .lg i.a{background:#8B8A94}.cells .c.a{background:#8B8A94;border-color:#8B8A94;color:#fff}
+  /* timeline: ink line, ink dots */
+  .track{background:rgba(20,19,24,0.18);height:2px;border-radius:0;margin-top:22px}
+  .track i{width:12px;height:12px;background:var(--ink);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--ink);margin-top:-6px}
+  /* funnel: active stage is ink, one violet marker */
+  .stg{box-shadow:none;border-color:var(--hairline)}
+  .stg:hover{background:var(--inset);box-shadow:none;transform:none;border-color:var(--hairline)}
+  .stg.active{background:var(--ink);border-color:var(--ink);color:#F4F4F3;box-shadow:none}
+  .stg.active b{color:#fff}.stg.active small{color:rgba(244,244,243,0.64)}.stg.active .k{color:rgba(244,244,243,0.5)}.stg.active em{color:rgba(244,244,243,0.7)}
+  .stg.active::before{content:"";position:absolute;top:14px;right:14px;width:10px;height:10px;border-radius:50%;background:var(--violet)}
+  /* proof: one frame material, shadows live on screenshots only */
+  .browser,.shot,.lp,.figwrap,.anal3 figure,.evrow figure{box-shadow:var(--shadow-support)}
+  .browser .bbar{background:var(--bg)}
+  .browser .bbar i{background:#D9D8D6}.browser .bbar i:nth-child(2){background:#C9C8C5}.browser .bbar i:nth-child(3){background:#B9B8B4}
+  /* editorial foot on every slide */
+  .slide::after{content:"Do It Digital · LinkedIn Outbound";position:absolute;left:clamp(24px,5vw,64px);bottom:26px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);pointer-events:none}
+  .slide::before{content:attr(data-title);position:absolute;right:clamp(24px,5vw,64px);bottom:26px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);pointer-events:none}
+  .slide.center::before,.slide.center::after{display:none}
+  /* ink act breaks: diagnosis, deliverables, investment */
+  .slide.ink{background:var(--ink);color:#F4F4F3}
+  .slide.ink .sec-head,.slide.ink .sec-head.grad{color:#F4F4F3;-webkit-text-fill-color:#F4F4F3}
+  .slide.ink .eyebrow{color:rgba(244,244,243,0.7)}.slide.ink .eyebrow .n{color:rgba(244,244,243,0.4)}
+  .slide.ink::before,.slide.ink::after{color:rgba(244,244,243,0.4)}
+  .slide.ink p,.slide.ink li,.slide.ink .tl2,.slide.ink .why,.slide.ink .bd,.slide.ink .note,.slide.ink .foot-disc{color:rgba(244,244,243,0.72)}
+  .slide.ink b,.slide.ink .big,.slide.ink .dl b,.slide.ink .bd b{color:#F4F4F3}
+  .slide.ink .k,.slide.ink .bounds .bd b,.slide.ink .tcol .bd b,.slide.ink .note b,.slide.ink .eyebrow{color:rgba(244,244,243,0.5)}
+  .slide.ink .card,.slide.ink .dl,.slide.ink .note,.slide.ink .blk{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.14);box-shadow:none}
+  .slide.ink .card:hover{border-color:rgba(255,255,255,0.28)}
+  .slide.ink .dark{background:#F4F4F3;color:var(--ink);border-color:transparent}
+  .slide.ink .dark .k{color:var(--dim)}.slide.ink .dark b{color:var(--ink)}.slide.ink .dark span{color:var(--silver)}.slide.ink .dgrid i{color:var(--ink)}
+  .slide.ink .dark .dgrid>div{border-color:rgba(20,19,24,0.12)}
+  .slide.ink .bar i::after{background:rgba(244,244,243,0.28)}.slide.ink .bar.me i::after{background:#F4F4F3}
+  .slide.ink .bar span,.slide.ink .bar b,.slide.ink .bar.me b{color:#F4F4F3}.slide.ink .bar span{color:rgba(244,244,243,0.72)}
+  .slide.ink .legend span{color:rgba(244,244,243,0.6)}.slide.ink .legend span::before{background:rgba(244,244,243,0.28)}.slide.ink .legend span.me::before{background:#F4F4F3}
+  .slide.ink .chart .k{color:rgba(244,244,243,0.5)}
+  .slide.ink .rec{border-color:rgba(255,255,255,0.28)}
+  .slide.ink .big span{color:rgba(244,244,243,0.5)}
+  .slide.ink .inc li::before,.slide.ink .rec li::before{background:#F4F4F3}
+  .slide.ink .chk li::before{background:#F4F4F3;border-color:#F4F4F3}.slide.ink .chk li::after{border-color:var(--ink)}
+  .slide.ink .xlist li::before{border-color:rgba(244,244,243,0.5)}
+  .slide.ink .tcol .bd,.slide.ink .bounds .bd{border-color:rgba(255,255,255,0.14)}
+  .slide.ink .stop{color:var(--violet);-webkit-text-fill-color:var(--violet)}
+  .slide.ink .decide{background:#F4F4F3;color:var(--ink);border-color:transparent}
+  .slide.ink .decide b{color:var(--ink)}.slide.ink .decide span{color:var(--silver)}
+  .slide.ink .foot-disc{border-top-color:rgba(255,255,255,0.14)}
+
+  /* v8.2 follow-ups */
+  .tk{background:rgba(20,19,24,0.18);height:2px;border-radius:0;margin-bottom:22px}
+  .tk::before{display:none}
+  .tk span{width:12px;height:12px;background:var(--ink);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--ink)}
+  .tc.m{background:var(--inset);border-color:rgba(20,19,24,0.22)}
+  .tc li::before{background:var(--ink)}
+  .slide.ink .tcol .bd,.slide.ink .bounds .bd{background:rgba(255,255,255,0.04);color:rgba(244,244,243,0.72)}
+  .slide::before{display:none}
+  .slide::after{content:"Do It Digital · LinkedIn Outbound   \00b7   " attr(data-title);white-space:pre}
+
+  /* ============ v8.3 readability, zoom, post mock, outcome flow ============ */
+  :root{--mono:'Hanken Grotesk',sans-serif;--code:'JetBrains Mono',monospace}
+  .wrap{max-width:1300px}
+  .wrap.wide{max-width:1500px}
+  .eyebrow{font-size:13px;letter-spacing:0.14em;font-weight:500}
+  .eyebrow .n{font-family:var(--code);font-weight:400;letter-spacing:0.06em}
+  .k,.blocklbl,.si b,.terms2 b,.obj .ms b,.fn .job b,.way .fit b,.fstep .eg b,.tlcard .goal b,.note b,.later b,.lp-next b,.bounds .bd b,.tcol .bd b,.dt .r.head>div,.tt .r.head>div,.cmp .r.head>div:last-child,.ba .r.head .c,.score .row.head .c,.ms .out b,.metric .ml,.cells .w,.cells .c i,.case .src,.dark .k{letter-spacing:0.1em;font-weight:500}
+  .k{font-size:12px}.blocklbl{font-size:12.5px;margin-bottom:12px}.dl .k{font-size:13px}
+  .stg .k{font-size:10.5px;letter-spacing:0.08em}
+  .browser .bbar span{font-family:var(--code);letter-spacing:0.06em;font-size:10.5px;text-transform:none}
+  .slide::after,.counter{font-family:var(--code)}
+  .cover-meta{font-family:var(--body);font-size:14.5px;letter-spacing:0;line-height:1.9}
+  .sec-head.oneline{max-width:none;white-space:nowrap}
+  .sec-lead{font-size:19px;max-width:72ch}
+  .v8list li{font-size:16px;line-height:1.5}
+  .shot .cap h3{font-size:19px}.shot .cap p{font-size:15.5px}
+  .li .nm{font-size:22px}.li .hl{font-size:15px}.li .mt{font-size:14px}.li .btns span{font-size:14px}
+  .dl b{font-size:16px}.dl p{font-size:14.5px}
+  .outs li b{font-size:16.5px}.outs li span{font-size:14px}
+  .blk p{font-size:15px}.blk .v8list li{font-size:14.5px}.blk h3{font-size:19px}
+  .note{font-size:14.5px}.ms p{font-size:14.5px}.bar{font-size:14px}.tc li{font-size:13px}.pc p{font-size:14px}.qs{font-size:13.5px}
+  .shots.team.four .shot .cap .role{font-size:14px}
+  /* slide 3: colour shows the engagement model. Personal perspective against company news */
+  .slide.ink .bar.me i::after{background:var(--violet)}
+  .slide.ink .legend span.me::before{background:var(--violet)}
+  .slide.ink .bar.me b,.slide.ink .bar.me span{color:#fff}
+  .slide.ink .bar.me span{font-weight:500}
+  /* hover zoom: overlay, never reflow */
+  .zm{position:relative}
+  .zm img.zoom{display:none;position:absolute;z-index:70;width:210%;max-width:none;height:auto!important;border:1px solid rgba(20,19,24,0.18);border-radius:12px;box-shadow:0 30px 80px rgba(20,19,24,0.35);background:#fff;object-fit:unset;pointer-events:none}
+  .zm:hover{z-index:70;overflow:visible}
+  .zm:hover img.zoom{display:block}
+  .zm.zl img.zoom{left:0}.zm.zr img.zoom{right:0}.zm.zt img.zoom{top:0}.zm.zb img.zoom{bottom:0}
+  .shots.team.four .shot.zm img.zoom{width:200%}
+  /* slide 6 */
+  .outc{grid-template-columns:0.9fr 1.1fr;gap:28px}
+  .pgrid{gap:14px}
+  .pgrid .browser img{height:200px}
+  .pgrid .browser figcaption{font-size:13.5px;padding:11px 14px 13px}
+  /* slide 8: the post as it would appear */
+  .stagepanel{min-height:420px;overflow:visible}
+  .postmock{padding:18px 20px;background:var(--inset)}
+  .pm-card{background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;padding:14px 16px 8px;box-shadow:0 1px 2px rgba(0,0,0,0.06)}
+  .pm-head{display:flex;align-items:flex-start;gap:10px}
+  .pm-av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none;background:#e9e5df}
+  .pm-who{flex:1;min-width:0}
+  .pm-who b{font-size:14.5px}.pm-who span{font-size:12px;line-height:1.3}
+  .pm-who .pm-when{color:rgba(0,0,0,0.55);font-size:11.5px;margin-top:1px}
+  .pm-follow{font-size:13px;font-weight:600;color:#0a66c2;flex:none;padding-top:2px}
+  .pm-body{margin-top:10px}
+  .pm-text{margin-top:0;font-size:14px;line-height:1.45}
+  .pm-text.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .pm-more{background:none;border:0;padding:0;margin-top:2px;font:inherit;font-size:13px;color:rgba(0,0,0,0.55);cursor:pointer}
+  .pm-more:hover{color:#0a66c2;text-decoration:underline}
+  .pm-media{margin-top:10px}
+  .pm-ev{background:#0b0b0b;color:#fff;border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+  .pm-ev b{font-size:15px}.pm-ev span{font-size:12.5px;color:rgba(255,255,255,0.78);line-height:1.35}.pm-ev i{font-style:normal;font-size:11px;color:#f2e14a;margin-top:4px;letter-spacing:0.04em;text-transform:uppercase}
+  .pm-ev.live{background:linear-gradient(135deg,#1d1d1d,#3a3a3a)}
+  .pm-social{display:flex;align-items:center;gap:6px;margin-top:10px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.08);font-size:12px;color:rgba(0,0,0,0.6)}
+  .pm-rx{display:inline-flex}
+  .pm-rx i{width:16px;height:16px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-style:normal;border:1.5px solid #fff;margin-right:-4px}
+  .pm-rx i.l{background:#378fe9}.pm-rx i.c{background:#6dae4f}.pm-rx i.i{background:#f5c75d}
+  .pm-social>span:nth-child(2){margin-left:6px}
+  .pm-cm{margin-left:auto}
+  .pm-actions{display:flex;justify-content:space-around;padding:6px 0 2px;font-size:12.5px;font-weight:600;color:rgba(0,0,0,0.6)}
+  .pm-note{margin-top:10px;font-size:12px;line-height:1.4;color:var(--dim)}
+  .stageinfo{padding:20px 24px}
+  .stageinfo h3{font-size:21px}
+  .si p{font-size:14.5px}
+  .stg{scroll-margin:120px}
+  /* slide 10: outcome flow */
+  .anal3 .shot img{height:270px}
+  .outflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) 1.7fr;gap:14px;margin-top:16px;align-items:stretch}
+  .of{position:relative;border:1px solid var(--hairline);border-radius:14px;background:var(--lift);padding:14px 16px}
+  .of b{display:block;font-family:var(--disp);font-weight:600;font-size:30px;letter-spacing:-0.035em;line-height:1;margin-top:8px;color:var(--fg)}
+  .of span:not(.k){display:block;font-size:12.5px;line-height:1.4;color:var(--silver);margin-top:7px}
+  .of:not(:nth-child(4))::after{content:"";position:absolute;right:-10px;top:50%;width:7px;height:7px;border-top:1.5px solid var(--ink);border-right:1.5px solid var(--ink);transform:translateY(-50%) rotate(45deg);z-index:2}
+  .oftx{border:1px solid var(--hairline);border-radius:14px;background:var(--lift);padding:14px 18px;font-size:14px;line-height:1.5;color:var(--silver)}
+  .oftx b{color:var(--fg);font-weight:600}
+  /* slide 11: zoom stays inside the slide */
+  .feed.six .lp .real{max-height:400px}
+  .feed.six .lp.has-real .real{transform-origin:center center}
+  .feed.six .lp.has-real:hover .real{transform:scale(1.5)}
+  .feed.six .stage:nth-child(1) .lp.has-real .real{transform-origin:center left}
+  .feed.six .stage:nth-child(6) .lp.has-real .real{transform-origin:center right}
+  .feed.six{gap:14px}
+  .proof3.two .receipts img{aspect-ratio:1/1.05}
+  .stageinfo{gap:12px}
+
+  /* v8.3b: post comment, type floor, close slide, print */
+  .stagepanel{grid-template-columns:1.15fr 1fr}
+  .pm-comment{display:flex;gap:10px;margin-top:10px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);align-items:flex-start}
+  .pm-cav{width:32px;height:32px;border-radius:50%;background:#dfe3ea;color:#3b4a5a;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+  .pm-comment b{display:block;font-size:12.5px}.pm-comment b i{font-style:normal;font-weight:400;color:rgba(0,0,0,0.55);font-size:11.5px}
+  .pm-comment p{font-size:13px;line-height:1.4;margin-top:3px;background:#f3f4f6;border-radius:0 8px 8px 8px;padding:8px 10px}
+  .pm-cact{display:block;font-size:11.5px;color:rgba(0,0,0,0.55);margin-top:5px;font-weight:600}.pm-cact em{font-style:normal;font-weight:400}
+  .stg small,.stg em{font-size:12px}.stg .k{font-size:11px}
+  .lp-m span,.feed.six .lp-m span,.sh span:not(.k),.feed.six .sh span:not(.k),.feed-in>div:not(.tx) span,.lp-h span{font-size:12px}
+  .feed.six .lp-t,.lp-t{font-size:12.5px}
+  .ms .out b,.bounds .bd b,.tcol .bd b,.metric .ml,.cells .w,.cells .c i,.fn .job b{font-size:11.5px}
+  .fstep .eg b,.tlcard .goal b,.obj .ms b,.si b,.terms2 b,.way .fit b,.later b,.lp-next b,.note b,.dt .r.head>div,.tt .r.head>div,.ba .r.head .c,.score .row.head .c{font-size:11.5px}
+  .slide.close .sec-head{max-width:24ch}
+  .closebar{margin-top:22px;padding-top:20px}
+  .slide.close .pillbtn{background:var(--violet);border-color:var(--violet);color:#fff}
+  .slide.close .pillbtn:hover{background:#6F52F0;border-color:#6F52F0}
+  @media print{html{zoom:1!important}}
+
+  /* ============ v8.4 screen-share type scale. Body floor 15px, most body 16px ============ */
+  .slide{padding:72px clamp(24px,4vw,56px) 64px}
+  .wrap{max-width:1420px}
+  .wrap.wide{max-width:1580px}
+  .sec-head{max-width:34ch}
+  .close h2{max-width:26ch}
+  .sec-lead{font-size:20px;max-width:76ch}
+  .eyebrow{font-size:13.5px}.k{font-size:12.5px}.blocklbl{font-size:13px}.dl .k{font-size:13.5px}
+  .v8list li{font-size:17px}.blk .v8list li{font-size:16px}.blk p{font-size:16px}.blk h3{font-size:20px}
+  .shot .cap h3{font-size:20px}.shot .cap p{font-size:16px}.shots.team.four .shot .cap .role{font-size:15px}
+  .dl b{font-size:17px}.dl p{font-size:15.5px}
+  .outs li b{font-size:17px}.outs li span{font-size:15px}
+  .note{font-size:15.5px}.evtx,.oftx{font-size:15px}
+  .ms p{font-size:16px}.ms h3{font-size:19px}.ms .out{font-size:14px}
+  .bar{font-size:15px}.bar b{font-size:15px}.legend{font-size:13.5px}
+  .tc li{font-size:14.5px}.tc b{font-size:18px}
+  .pc p{font-size:15px}.pc h3{font-size:18px}.qs{font-size:14.5px}.qs b{font-size:13.5px}
+  .metric .mv{font-size:28px}.metric .ml{font-size:12px}
+  .stg b{font-size:18px}.stg small,.stg em{font-size:13px}.stg .k{font-size:11.5px}
+  .pm-text{font-size:15px}.pm-who b{font-size:15px}.pm-who span{font-size:12.5px}.pm-comment p{font-size:13.5px}.pm-note{font-size:13px}
+  .si p{font-size:15.5px}.si b{font-size:12px}.stageinfo h3{font-size:22px}
+  .of b{font-size:32px}.of span:not(.k){font-size:14px}
+  .anal3 figcaption b{font-size:16px}.anal3 figcaption span{font-size:14px}
+  .feed-in .tx{font-size:14.5px}.feed-in>div:not(.tx) b{font-size:26px}
+  .sh b{font-size:15px}.feed.six .sh b{font-size:14.5px}
+  .chk li,.xlist li,.scope2 .chk li,.scope2 .xlist li{font-size:15px}
+  .dgrid b{font-size:16px}.dgrid span{font-size:13.5px}.dgrid i{font-size:19px}
+  .inc li,.rec li{font-size:15px}.tl2{font-size:15.5px}.why{font-size:15px}
+  .bounds .bd,.tcol .bd{font-size:14.5px}
+  .decide span{font-size:15.5px}.decide b{font-size:21px}
+  .nsteps li{font-size:15.5px}.close p,.close .lead{font-size:17px}
+  .closebar .links{font-size:14px}.cover-bullets span{font-size:15px}.cover .lead{font-size:23px}
+  .cells .c{font-size:13px}.tt .r>div{font-size:15px}
+  .li .hl{font-size:16px}.li .mt{font-size:14.5px}
+  .foot-disc{font-size:14px}
+
+  /* v8.5: smooth zoom, LinkedIn action row, slide 13 type, slide 14 layout */
+  .zm{overflow:visible!important}
+  .zm:hover{z-index:auto}
+  .shot.zm .ph{border-radius:17px 17px 0 0}
+  .browser.zm .bbar{border-radius:17px 17px 0 0}
+  .zm img.zoom{display:block;opacity:0;visibility:hidden;transform:scale(.96);transform-origin:top left;z-index:80;transition:opacity .22s ease,transform .3s cubic-bezier(.2,.7,.2,1),visibility 0s linear .22s}
+  .zm:hover img.zoom{opacity:1;visibility:visible;transform:none;transition:opacity .22s ease,transform .3s cubic-bezier(.2,.7,.2,1),visibility 0s}
+  .zm.zr img.zoom{transform-origin:top right}.zm.zb img.zoom{transform-origin:bottom left}.zm.zr.zb img.zoom{transform-origin:bottom right}
+  .feed.six .lp.has-real .real{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease}
+  .pm-who b i{font-style:normal;font-weight:400;color:rgba(0,0,0,0.55);font-size:12px}
+  .pm-menu{font-size:16px;letter-spacing:1px;color:rgba(0,0,0,0.6);margin-left:12px;flex:none;line-height:1}
+  .pm-actions{padding:4px 0 2px}
+  .pm-actions span{display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:4px;color:rgba(0,0,0,0.6)}
+  .pm-actions span:hover{background:rgba(0,0,0,0.06)}
+  .pm-actions svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .pm-card{border-color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  .pm-text{font-size:14.5px;line-height:1.43;color:rgba(0,0,0,0.9)}
+  .pm-social{color:rgba(0,0,0,0.6);font-size:12.5px}
+  section[data-title="The content system"] .col3{gap:18px;margin-top:26px}
+  section[data-title="The content system"] .blk{padding:26px 28px}
+  section[data-title="The content system"] .blk .k{font-size:13px}
+  section[data-title="The content system"] .blk p{font-size:19px;line-height:1.4;color:var(--fg);margin-top:10px}
+  section[data-title="The content system"] .note{font-size:16.5px;line-height:1.5;padding:18px 22px;margin-top:22px}
+  .scope3{display:grid;grid-template-columns:1fr;gap:16px;margin-top:22px}
+  .scope3 .dark{padding:22px 28px 16px}
+  .scope3 .dgrid{grid-template-columns:1fr 1fr;gap:8px 40px}
+  .scope3b{display:grid;grid-template-columns:1fr 1.45fr;gap:16px;align-items:stretch}
+  .scope3b .blk{padding:18px 22px}
+  .scope3b .xlist{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+  .scope3b .chk,.scope3b .xlist{margin-top:10px}
+  .scope3b .note.span2{grid-column:1/-1;margin-top:0}
+
+  /* ============ v8.6 stage: the 1920x1080 layout scaled to fit any window ============ */
+  body.staged{overflow:hidden}
+  body.staged #deck{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform-origin:50% 50%;transform:translate(-50%,-50%) scale(var(--z,1));overflow:visible}
+  body.staged .slide{overflow:hidden;padding:72px 56px 64px}
+  body.staged .nav{padding:0 40px}
+  body.staged .sec-head{font-size:54px}
+  body.staged .sec-lead{font-size:20px}
+  body.staged .cover h1{font-size:80px}
+  body.staged .cover .lead{font-size:23px}
+  body.staged .prose p{font-size:19px}
+  body.staged .statrow .n{font-size:48px}
+  body.staged .shot .ph.tall{height:300px}
+  body.staged .sv b{font-size:50px}
+  body.staged .inst .price,body.staged .tier-price{font-size:42px}
+  body.staged .bignum{font-size:116px}
+  body.staged .roi-out .hero .hv{font-size:72px}
+  body.staged .close h2{font-size:56px}
+  body.staged .thesis{font-size:21px}
+  body.staged .rec .big{font-size:60px}
+  body.staged [data-title="How we do it ourselves"] .shot .ph.tall{height:340px}
+  body.staged .statement{font-size:28px}
+  body.staged .ev .sv b{font-size:44px}
+  body.staged .slide::after{left:56px}
+  @media print{body.staged #deck{position:static;transform:none;width:auto;height:auto}html{zoom:1!important}}
+
+  /* v8.6b: slide 8 panel never changes height between stages */
+  .stagepanel{min-height:506px}
+  .postmock{padding:14px 18px}
+  .pm-ev{padding:10px 14px;gap:2px}
+  .pm-ev b{font-size:14px}.pm-ev span{font-size:12px}.pm-ev i{font-size:10.5px;margin-top:2px}
+  section[data-title="The campaign funnel"] .stages{margin-top:10px}
+  section[data-title="The campaign funnel"] .track{margin-top:16px}
+  section[data-title="The campaign funnel"] .sec-lead{margin-top:12px}
+
+  /* v8.7: audit fixes (labels to 13px floor, alignment, crops, contrast) */
+  body.staged .bar{grid-template-columns:270px 1fr 44px}
+  .shot .ph.wide.missing{aspect-ratio:auto;height:300px}
+  body.staged .track{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;justify-items:center;margin:16px 0 0}
+  .k,.stg .k,.si b,.ms .out b,.note b,.metric .ml,.rec .big span,.sh span:not(.k),.feed.six .sh span:not(.k),.feed-in>div:not(.tx) span,.bounds .bd b,.tcol .bd b,.impcap span,.impcap em,.cg li::before{font-size:13px}
+  .browser .bbar span{font-size:12px}
+  .impcap{min-height:76px}
+  .slide::after{font-size:12px}
+  .kb-hint{font-size:12px}
+  .pm-who span,.pm-who b i,.pm-who .pm-when,.pm-social,.pm-actions,.pm-comment b,.pm-comment b i,.pm-cact{font-size:13px}
+  .stageinfo{justify-content:center}
+  section[data-title="Why one founder"] .col3{align-items:stretch}
+  .anal3 .shot img{height:380px}
+  .tk{margin-left:0;margin-right:0}
+  .vplay{left:22px;top:auto;bottom:22px;transform:none}
+  .vposter:hover .vplay{transform:scale(1.06)}
+  .proof3.two .receipts img:first-child{object-position:left top}
+  .slide.ink .eyebrow .n::after{background:rgba(244,244,243,0.35)}
+  .slide.ink::before,.slide.ink::after{color:rgba(244,244,243,0.6)}
+
+  /* v8.8: ink slides bigger and brighter (Nas: "this is hard to read") */
+  .slide.ink p,.slide.ink li,.slide.ink .tl2,.slide.ink .why,.slide.ink .bd,.slide.ink .note,.slide.ink .foot-disc,.slide.ink .tcol .bd,.slide.ink .bounds .bd{color:rgba(244,244,243,0.9)}
+  .slide.ink .k,.slide.ink .bounds .bd b,.slide.ink .tcol .bd b,.slide.ink .note b,.slide.ink .eyebrow,.slide.ink .rec .big span{color:rgba(244,244,243,0.7)}
+  .slide.ink .card,.slide.ink .dl,.slide.ink .note,.slide.ink .blk{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.22)}
+  .slide.ink .bar span{color:rgba(244,244,243,0.9)}.slide.ink .legend span{color:rgba(244,244,243,0.78)}
+  .slide.ink .dl b{font-size:18px}.slide.ink .dl p{font-size:16.5px;line-height:1.5}
+  .slide.ink .dgrid b{font-size:17px}.slide.ink .dgrid span{font-size:15px;color:rgba(244,244,243,0.72)}
+  .slide.ink .scope3 .dark .dgrid span{color:var(--silver)}
+  .slide.ink .chk li,.slide.ink .xlist li{font-size:16.5px}
+  .slide.ink .note{font-size:16.5px}
+  section[data-title="Investment and risk reversal"] .one{grid-template-columns:1.15fr 1fr;gap:24px;margin-top:28px}
+  section[data-title="Investment and risk reversal"] .rec{padding:34px 38px 30px}
+  section[data-title="Investment and risk reversal"] .rec .k{font-size:14px}
+  section[data-title="Investment and risk reversal"] .rec .big{font-size:78px;margin-top:14px}
+  section[data-title="Investment and risk reversal"] .rec .big span{font-size:15px}
+  section[data-title="Investment and risk reversal"] .tl2{font-size:19px;margin-top:10px}
+  section[data-title="Investment and risk reversal"] .inc{margin-top:20px;gap:12px 28px}
+  section[data-title="Investment and risk reversal"] .inc li,section[data-title="Investment and risk reversal"] .rec li{font-size:18.5px;line-height:1.45}
+  section[data-title="Investment and risk reversal"] .why{font-size:17.5px;line-height:1.5;margin-top:24px}
+  section[data-title="Investment and risk reversal"] .tcol{gap:14px}
+  section[data-title="Investment and risk reversal"] .tcol .bd{padding:20px 24px;font-size:17.5px;line-height:1.5;flex:1;display:flex;flex-direction:column;justify-content:center}
+  section[data-title="Investment and risk reversal"] .tcol .bd b{font-size:14px;margin-bottom:6px}
+  section[data-title="The campaign funnel"] .sec-lead{max-width:82ch}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:500px}
+  /* v8.8b: keep the light deliverables card on the ink slide; slide 8 fit */
+  .slide.ink .dark.card,.slide.ink .dark{background:#F4F4F3;border-color:transparent;color:var(--ink)}
+  .slide.ink .dark .k{color:var(--dim)}.slide.ink .dark b{color:var(--ink)}.slide.ink .dark .dgrid span{color:var(--silver)}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:494px}
+
+  /* v8.9: body text to 18px for the meeting */
+  .v8list li,.blk p,.blk .v8list li,.dl p,.outs li span,.note,.evtx,.oftx,.ms p,.tc li,.pc p,.qs,.shot .cap p,.shots.team.four .shot .cap .role,.chk li,.xlist li,.scope2 .chk li,.scope2 .xlist li,.dgrid span,.inc li,.rec li,.tl2,.why,.bounds .bd,.tcol .bd,.decide span,.nsteps li,.close p,.close .lead,.stg small,.stg em,.si p,.of span:not(.k),.anal3 figcaption span,.feed-in .tx,.sh span:not(.k),.feed.six .sh span:not(.k),.impcap em,.cover-bullets span,.slide.ink .dl p,.slide.ink .dgrid span,.slide.ink .chk li,.slide.ink .xlist li,.slide.ink .note,section[data-title="The content system"] .note{font-size:18px;line-height:1.45}
+  .sec-lead{font-size:21px}.cover .lead{font-size:24px}
+  .dl b,.outs li b,.blk h3,.ms h3,.tc b,.pc h3,.shot .cap h3,.dgrid b,.stg b,.stageinfo h3,.slide.ink .dl b,.slide.ink .dgrid b{font-size:20px}
+  section[data-title="The content system"] .blk p{font-size:21px}
+  .pm-text{font-size:16px}.pm-comment p{font-size:15px}
+  .of b{font-size:34px}.anal3 figcaption b{font-size:18px}
+  .k,.stg .k,.si b,.ms .out b,.note b,.metric .ml,.bounds .bd b,.tcol .bd b,.blocklbl{font-size:14px}
+  .qs b{font-size:15px}.impcap span{font-size:14px}
+  /* keep the tall slides inside 1080 */
+  .slide{padding:64px 56px 56px}
+  section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:15px}
+  section[data-title="The campaign funnel"] .sec-lead{font-size:19px}
+  section[data-title="How we do it ourselves"] .sh span:not(.k),section[data-title="How we do it ourselves"] .impcap em{font-size:14.5px}
+  section[data-title="How we do it ourselves"] .feed-in .tx{font-size:16px}
+  section[data-title="How we have helped others"] .qs,section[data-title="How we have helped others"] .pc p{font-size:16px}
+  section[data-title="Deliverables and scope"] .dgrid span,section[data-title="Deliverables and scope"] .chk li,section[data-title="Deliverables and scope"] .xlist li{font-size:16.5px}
+  section[data-title="Next steps"] .nsteps li{font-size:17px}
+  section[data-title="Our own content evidence"] .of span:not(.k),section[data-title="Our own content evidence"] .oftx{font-size:16px}
+  section[data-title="The 12-week outcome"] .outs li span{font-size:16.5px}
+  section[data-title="The 12-week plan"] .tc li{font-size:16px}
+  section[data-title="How we have helped others"] .qs,section[data-title="How we have helped others"] .pc p{font-size:15px;line-height:1.4}
+  section[data-title="How we have helped others"] .proof3.two .receipts img{aspect-ratio:1/0.95}
+  section[data-title="Deliverables and scope"] .dgrid span,section[data-title="Deliverables and scope"] .chk li,section[data-title="Deliverables and scope"] .xlist li{font-size:15.5px;line-height:1.35}
+  section[data-title="Deliverables and scope"] .scope3 .dgrid{gap:4px 40px}
+  section[data-title="Deliverables and scope"] .scope3 .dgrid>div{padding:8px 0}
+  section[data-title="Deliverables and scope"] .scope3b .blk{padding:14px 20px}
+  section[data-title="Deliverables and scope"] .scope3{gap:12px;margin-top:16px}
+
+  /* ============ client build ============ */
+  .nav-for img{background:#0b0b0b;padding:5px}
+  .lockup img.ao{background:#0b0b0b;padding:10px;object-fit:contain}
+  .shots.team.five{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+  .shots.team.five .shot .ph{aspect-ratio:4/3}
+  .shot .ph .tm{display:none;position:absolute;inset:0;background:#0b0b0b;color:#F4F4F3;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+  .shot .ph.missing .tm{display:flex}
+  .shot .ph .tm img{width:44px;height:44px}
+  .shot .ph .tm b{font-family:var(--disp);font-weight:600;font-size:34px;letter-spacing:-0.03em;line-height:1;color:#F4F4F3}
+  .shot .ph .tm i{font-style:normal;font-family:var(--code);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#DE9B27}
+  .shots.team.five .shot .cap{padding:12px 14px 14px}
+  .shots.team.five .shot .cap h3{font-size:16.5px}
+  .shots.team.five .shot .cap .role{font-size:13.5px;line-height:1.35}
+  .pm-av.init{display:flex;align-items:center;justify-content:center;font-weight:700;color:#F4F4F3;background:#0b0b0b;font-size:16px;letter-spacing:0.02em}
+  .chan{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:0}
+  .chan .card{padding:18px 20px}
+  .chan h4{font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:-0.015em;margin-top:6px}
+  .chan ul{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:7px}
+  .chan li{position:relative;padding-left:18px;font-size:15.5px;line-height:1.45;color:var(--silver)}
+  .chan li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ink)}
+  .slide.ink .chan li{color:rgba(244,244,243,0.72)}.slide.ink .chan li::before{background:#F4F4F3}
+  .slide.ink .chan h4{color:#F4F4F3}
+  .pk2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;align-items:stretch}
+  .pk{padding:18px 24px;display:flex;flex-direction:column}
+  .pk .k{font-size:12.5px}
+  .pk h3{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-0.025em;line-height:1.1;margin-top:8px}
+  .pk .pr{font-family:var(--disp);font-weight:600;font-size:40px;letter-spacing:-0.04em;line-height:1;margin-top:12px}
+  .pk .pr span{font-family:var(--code);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);margin-left:8px;font-weight:400}
+  .pk .sub{font-size:15px;color:var(--silver);margin-top:8px;line-height:1.45}
+  .pk ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:5px}
+  .pk li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.45;color:var(--silver)}
+  .pk li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ink)}
+  .pk li.plus{color:var(--fg);font-weight:500}
+  .pk li.plus::before{width:8px;height:8px;top:8px;left:-1px}
+  .pk .meta{margin-top:auto;padding-top:14px;font-size:14px;color:var(--dim);line-height:1.45;border-top:1px solid var(--hairline)}
+  .pk.feat{border-color:var(--ink);border-width:1.5px}
+  .slide.ink .pk{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.14)}
+  .slide.ink .pk.feat{background:#F4F4F3;color:var(--ink);border-color:transparent}
+  .slide.ink .pk.feat h3,.slide.ink .pk.feat .pr,.slide.ink .pk.feat li.plus{color:var(--ink)}
+  .slide.ink .pk.feat li,.slide.ink .pk.feat .sub,.slide.ink .pk.feat .meta{color:var(--silver)}
+  .slide.ink .pk.feat .k{color:var(--dim)}
+  .slide.ink .pk.feat li::before{background:var(--ink)}
+  .slide.ink .pk.feat .meta{border-top-color:rgba(20,19,24,0.12)}
+  .slide.ink .pk:not(.feat) h3,.slide.ink .pk:not(.feat) .pr,.slide.ink .pk:not(.feat) li.plus{color:#F4F4F3}
+  .slide.ink .pk:not(.feat) li,.slide.ink .pk:not(.feat) .sub{color:rgba(244,244,243,0.72)}
+  .slide.ink .pk:not(.feat) li::before{background:#F4F4F3}
+  .slide.ink .pk:not(.feat) .meta{color:rgba(244,244,243,0.5);border-top-color:rgba(255,255,255,0.14)}
+  .scope3b.ao{grid-template-columns:1fr 1.15fr 1.3fr}
+  .scope3b.ao .blk{padding:14px 18px}
+  .scope3b.ao .xlist{grid-template-columns:1fr 1fr;gap:6px 14px}
+  .scope3b.ao .chk{gap:6px}
+  .pkt{display:flex;gap:8px;margin-bottom:4px}
+  .pkt button{font-family:inherit;font-size:13.5px;font-weight:600;padding:9px 14px;border-radius:999px;border:1px solid var(--hairline);background:var(--lift);color:var(--fg);cursor:pointer}
+  .pkt button.on{background:var(--ink);color:#F4F4F3;border-color:var(--ink)}
+  .roi-in{gap:14px;padding:22px 26px}
+  .ctl label{font-size:15px}
+  .ctl label output{font-size:20px}
+  .roi-out .k{color:rgba(244,244,243,0.5)}
+  .roi-out .hero .hl{font-size:16px;color:rgba(244,244,243,0.72);max-width:46ch}
+  .roi-out .hero .hv{font-size:64px}
+  .roi-cell .cv{font-size:28px}
+  .roi-cell .cl{font-size:11.5px;font-family:var(--mono);letter-spacing:0.1em}
+  .roi-out .foot{font-size:14.5px;color:rgba(244,244,243,0.6)}
+  .roi{margin-top:16px}
+  .assump{margin-top:12px}
+  .assump li{font-size:14px}
+  .ctl input[type=range]{background:linear-gradient(90deg,var(--ink) var(--pct,50%),#DDDCDA var(--pct,50%))}
+  .inv2{display:grid;grid-template-columns:1fr 1fr 0.9fr;gap:18px;margin-top:20px;align-items:stretch}
+  .inv2 .rec{padding:22px 26px}
+  .inv2 .rec .big{font-size:52px}
+  .inv2 .rec .inc{grid-template-columns:1fr}
+  .inv2 .tcol .bd{font-size:14.5px}
+  /* v1.1: investment slide fits 1080 */
+  .inv2 .rec .big{font-size:42px;white-space:nowrap}
+  .inv2 .rec .big span{font-size:11px}
+  .inv2 .rec{padding:18px 22px}
+  .inv2 .rec .inc{gap:5px;margin-top:10px}
+  .inv2 .rec .tl2{font-size:14.5px;margin-top:8px}
+  .inv2 .rec .why{font-size:14.5px;margin-top:12px}
+  .inv2 .tcol{gap:10px}
+  .inv2 .tcol .bd{padding:12px 16px;font-size:14px}
+  .inv2{margin-top:14px}
+  /* v1.2: guarantees as a row under the two packages; trims for 8 and 10 */
+  .inv2{grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+  .inv2 .tcol{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .inv2 .tcol .bd{padding:12px 16px;font-size:14px;line-height:1.4}
+  .inv2 .rec .inc{grid-template-columns:1fr 1fr;gap:5px 18px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:480px}
+  section[data-title="The campaign funnel"] .sec-lead{font-size:18px}
+  section[data-title="Our own content evidence"] .oftx{font-size:15px;line-height:1.4}
+  /* QA: no violet wash on the ROI panel */
+  .roi-out{background-image:none}
+
+  /* ============ generic Voice System deck ============ */
+  .lockup{margin-bottom:26px}
+  .prob{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+  .prob .card{padding:20px 24px}
+  .prob h4{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-0.015em;margin-top:6px}
+  .prob p{font-size:16px;line-height:1.5;color:var(--silver);margin-top:8px}
+  .slide.ink .prob h4{color:#F4F4F3}.slide.ink .prob p{color:rgba(244,244,243,0.72)}
+  .who{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  .who .blk{padding:18px 22px}
+  .pm-av.init{font-size:15px}
+  .inv2 .rec .big{font-size:40px}
+  .inv2 .rec .big span{font-size:10.5px}
+  section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:14px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:460px}
+  .cyc{font-family:var(--code);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+
+  /* ============ QA pass 18 Sep 2026: type floors, alignment, violet ============ */
+  .roi-out{background-image:none}
+  .inv2 .rec .tl2{font-size:16px;line-height:1.45}.inv2 .rec .why{font-size:16px;line-height:1.5}
+  .slide.ink .rec .why{border-top-color:rgba(255,255,255,0.22)}
+  .cg li{font-size:16px;line-height:1.45}.cg li::before{top:1px}
+  .roi-cell .cl{font-size:13px}
+  .pkt button{font-size:15px;padding:10px 16px}
+  .slide.close .pillbtn{font-size:16px;padding:16px 34px}
+  .closebar{max-width:960px}
+  .fine{font-size:13px}.closebar .links{font-size:15px}
+  .assump li{font-size:15px}
+  body.staged .cover h1{max-width:20ch}
+  .cover-meta{font-size:15px}.ghostbtn{font-size:15px}
+  .pm-text.clamp{-webkit-line-clamp:5}
+  section[data-title="The campaign funnel"] .postmock{padding:10px 18px}
+  section[data-title="The campaign funnel"] .pm-note{margin-top:6px}
+  section[data-title="The campaign funnel"] .stages{margin-top:10px}
+  section[data-title="The campaign funnel"] .stagepanel{margin-top:8px}
+  body.staged section[data-title="The campaign funnel"] .track{margin-top:12px}
+  section[data-title="The campaign funnel"] .stg small,section[data-title="The campaign funnel"] .stg em{font-size:15px}
+  .slide.ink .prob p{font-size:18px;line-height:1.45;color:rgba(244,244,243,0.9)}
+  section[data-title="The problem"] .prob{margin-top:0;flex:1}
+  section[data-title="The problem"] .diag{align-items:stretch}
+  section[data-title="The problem"] .diag>div:last-child{display:flex;flex-direction:column}
+  section[data-title="The problem"] .prob .card{padding:26px 28px}
+  section[data-title="The problem"] .diag .note{margin-top:16px!important}
+  section[data-title="The growth system"] .col4{grid-template-columns:1fr 1fr 1fr 1.3fr}
+  section[data-title="The 12-week outcome"] .pgrid .browser figcaption{font-size:15px;line-height:1.45}
+  .browser .bbar span{font-size:13px}
+  section[data-title="The 12-week outcome"] .pgrid .browser img{height:232px}
+  section[data-title="The campaign funnel"] .stagepanel{min-height:520px}
+  section[data-title="The campaign funnel"] .stages{margin-top:8px}
+  section[data-title="The campaign funnel"] .stagepanel{margin-top:6px}
+  section[data-title="The campaign funnel"] .pm-av{width:40px;height:40px}
+  section[data-title="The campaign funnel"] .pm-comment{margin-top:8px;padding-top:8px}
+  section[data-title="The campaign funnel"] .pm-comment p{padding:6px 10px}
+  section[data-title="The campaign funnel"] .pm-social{padding:6px 0}
+  section[data-title="The campaign funnel"] .pm-actions{padding:2px 0 0}
+  section[data-title="The campaign funnel"] .pm-ev{padding:8px 12px}
+  section[data-title="The campaign funnel"] .stageinfo{display:flex;flex-direction:column}
+  section[data-title="The campaign funnel"] .stageinfo .pm-note{font-size:13px;color:var(--dim);padding-top:14px}
+
+  /* ---- HYPR deck additions ---- */
+  .qa .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .qa .navmark .l:not(.k),.qa .navmark .sp{animation:none;max-width:0;opacity:0}
+  .nav-for img.wm{width:auto;height:22px;border-radius:0;background:none;padding:0}
+  .lockup img.wm{width:auto;height:44px;border-radius:0;box-shadow:none}
+  .lockup .x{font-family:var(--mono);font-size:15px;color:var(--dim)}
+  .cover h1{max-width:17ch}
+
+  /* positioning slide */
+  .pos{display:grid;grid-template-columns:1.08fr 0.92fr;gap:24px;margin-top:18px;align-items:start}
+  .prof{overflow:hidden;position:relative;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.9);background:#fff}
+  .prof .banner{position:relative;height:148px;background:#0b0b0b;color:#fff;padding:20px 26px;display:flex;flex-direction:column;justify-content:flex-start;gap:8px;overflow:hidden}
+  .prof .banner::after{content:"";position:absolute;right:-60px;bottom:-90px;width:260px;height:260px;border-radius:50%;background:rgba(88,224,224,0.14)}
+  .prof .banner .hl{position:relative;z-index:1;font-family:var(--disp);font-weight:600;font-size:23px;line-height:1.12;letter-spacing:-0.02em;max-width:19ch}
+  .prof .banner .hl i{font-style:normal;background:#58e0e0;color:#0b0b0b;padding:0 6px}
+  .prof .banner .sub{position:relative;z-index:1;font-size:12.5px;color:rgba(255,255,255,0.78);letter-spacing:0.01em;max-width:60ch;white-space:nowrap}
+  .prof .banner .lg{position:absolute;right:18px;top:16px;z-index:1;background:#fff;border-radius:8px;padding:7px 11px 5px}
+  .prof .banner .lg img{height:26px;width:auto}
+  .prof .banner .bstrip{position:absolute;right:20px;bottom:12px;left:auto;width:auto;z-index:1;font-family:var(--mono);font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);white-space:nowrap}
+  body.staged [data-title="The 12-week outcome"] .pgrid .browser img{height:172px}
+  body.staged [data-title="The 12-week outcome"] .outs{gap:7px}
+  body.staged [data-title="The 12-week outcome"] .outs li{padding:8px 14px 8px 50px}
+  body.staged [data-title="The 12-week outcome"] .outs li::before{top:10px}
+  body.staged [data-title="The 12-week outcome"] .note{margin-top:12px}
+  body.staged [data-title="How we have helped others"] .proof3{margin-top:16px}
+  body.staged [data-title="How we have helped others"] .qstrip{margin-top:10px}
+  body.staged .prices .big{font-size:48px}
+  .prices .big span{display:block;margin:8px 0 0}
+  .prof .head{padding:0 26px 16px;position:relative}
+  .prof .av{width:92px;height:92px;border-radius:50%;background:#e9e5df;border:4px solid #fff;margin-top:-46px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#4b4b4b;position:relative;z-index:2}
+  .prof .nm{font-size:21px;font-weight:600;margin-top:8px;display:flex;align-items:center;gap:8px}
+  .prof .nm i{font-style:normal;font-size:11px;color:rgba(0,0,0,0.6);font-weight:400}
+  .prof .hd{font-size:14.5px;line-height:1.4;margin-top:3px;color:rgba(0,0,0,0.9)}
+  .prof .meta{font-size:12.5px;color:rgba(0,0,0,0.6);margin-top:5px}
+  .prof .btns{display:flex;gap:8px;margin-top:10px}
+  .prof .btns span{border-radius:999px;padding:5px 14px;font-size:13px;font-weight:600;border:1px solid #0a66c2;color:#0a66c2}
+  .prof .btns span.p{background:#0a66c2;color:#fff}
+  .prof .feat{padding:12px 26px 18px;border-top:1px solid rgba(0,0,0,0.08)}
+  .prof .feat .fk{font-size:13px;font-weight:600;margin-bottom:9px}
+  .prof .fcards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .prof .fc{border:1px solid rgba(0,0,0,0.1);border-radius:8px;overflow:hidden;background:#fff}
+  .prof .fc .im{height:66px;background:#0b0b0b;color:#fff;padding:9px 11px;font-family:var(--disp);font-weight:600;font-size:12.5px;line-height:1.2;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+  .prof .fc .im::before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:#58e0e0}
+  .prof .fc .im.c{background:#58e0e0;color:#0b0b0b}.prof .fc .im.c::before{background:#0b0b0b}
+  .prof .fc .im.w{background:#fff;color:#0b0b0b;border-bottom:1px solid rgba(0,0,0,0.08)}
+  .prof .fc .cap{font-size:11px;color:rgba(0,0,0,0.6);padding:7px 11px 8px;line-height:1.35}
+  .prof .tag{position:absolute;right:16px;top:158px;z-index:3;font-family:var(--mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--violet);background:var(--lift);border:1px solid var(--hair);border-radius:999px;padding:4px 9px}
+  .today{margin-top:12px;border:1px dashed var(--hair-strong);border-radius:12px;padding:11px 14px;font-size:12.5px;line-height:1.45;color:var(--silver);background:var(--lift)}
+  .today b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);font-weight:400;margin-bottom:4px}
+  .today q{quotes:none;color:var(--fg)}
+  .redo{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:4px}
+  .redo li{border:1px solid var(--hair);border-radius:12px;background:var(--lift);padding:11px 14px 11px 46px;position:relative;box-shadow:var(--card-shadow)}
+  .redo li .ic{position:absolute;left:13px;top:12px;width:22px;height:22px;border-radius:7px;background:rgba(131,102,255,0.12);color:var(--violet);font-family:var(--mono);font-size:10.5px;display:flex;align-items:center;justify-content:center}
+  .redo li b{display:block;font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:-0.01em}
+  .redo li span{display:block;font-size:13px;line-height:1.45;color:var(--silver);margin-top:2px}
+
+  /* conversation slide: DM thread mock */
+  .dmmock{padding:18px 22px;background:var(--paper);border-right:1px solid var(--hair);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:rgba(0,0,0,0.9);display:flex;flex-direction:column}
+  .dm-head{display:flex;align-items:center;gap:10px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,0.08)}
+  .dm-av{width:36px;height:36px;border-radius:50%;background:#e9e5df;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#4b4b4b;flex:none}
+  .dm-who b{display:block;font-size:13.5px;font-weight:600}
+  .dm-who span{display:block;font-size:11.5px;color:rgba(0,0,0,0.6)}
+  .dm-thread{display:flex;flex-direction:column;gap:9px;margin-top:12px}
+  .dm{max-width:90%;padding:9px 13px 10px;border-radius:12px;font-size:13.5px;line-height:1.45;white-space:pre-line;background:#fff;border:1px solid rgba(0,0,0,0.08);align-self:flex-start;border-bottom-left-radius:4px}
+  .dm.me{align-self:flex-end;background:#e6f0fa;border-color:transparent;border-bottom-left-radius:12px;border-bottom-right-radius:4px}
+  .dm .who{display:block;font-size:10.5px;color:rgba(0,0,0,0.55);margin-bottom:3px;font-weight:600;letter-spacing:0.02em;white-space:normal}
+  .dm-card{margin-top:8px;border:1px solid rgba(0,0,0,0.1);border-radius:8px;overflow:hidden;background:#fff;color:rgba(0,0,0,0.9);white-space:normal}
+  .dm-card .im{height:50px;background:#0b0b0b;color:#fff;padding:8px 11px;font-family:var(--disp);font-weight:600;font-size:12.5px;line-height:1.2;display:flex;align-items:flex-end;position:relative}
+  .dm-card .im::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:#58e0e0}
+  .dm-card .t{padding:7px 11px 8px;font-size:11.5px;color:rgba(0,0,0,0.65);line-height:1.35}
+  .dm-note{margin-top:auto;padding-top:10px;font-size:12px;color:var(--dim);line-height:1.4}
+  .stg .k{font-size:9.5px}
+  .stagepanel.seq{min-height:470px;overflow:visible}
+
+  /* maths slide: fee model */
+  .roi-grid.six{grid-template-columns:1fr 1fr 1fr}
+  .roi-cell .cv.sm{font-size:22px}
+  .feeline{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;font-size:13px;color:var(--silver);border:1px solid var(--hair);border-radius:12px;background:var(--paper);padding:10px 14px}
+  .feeline b{font-family:var(--disp);font-weight:600;font-size:15px;color:var(--fg);letter-spacing:-0.01em}
+  .feeline i{font-style:normal;color:var(--dim)}
+
+  /* investment slide: one package */
+  .inv1{display:grid;grid-template-columns:1.32fr 0.68fr;gap:18px;margin-top:22px;align-items:stretch}
+  .prices{display:flex;gap:22px;margin-top:8px;align-items:flex-start}
+  .prices .big{margin-top:0;flex:0 1 auto}
+  .prices .big small{display:block;font-family:var(--body);font-size:13px;letter-spacing:0;text-transform:none;color:rgba(244,244,243,0.72);margin:8px 0 0;font-weight:400;max-width:30ch;line-height:1.4}
+  .prices .plus{font-family:var(--disp);font-weight:600;font-size:34px;color:rgba(244,244,243,0.5);margin-top:4px;flex:none}
+  .rec .inc{margin-top:14px}
+  .rec .why{margin-top:14px}
+  .nocap{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+  .nocap span{border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:6px 12px;font-size:12.5px;color:rgba(244,244,243,0.85)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <span class="navmark" aria-label="Do It Digital"><span class="l k">d</span><span class="l">o</span><span class="sp"></span><span class="l k">i</span><span class="l">t</span><span class="sp"></span><span class="l k">d</span><span class="l">i</span><span class="l">g</span><span class="l">i</span><span class="l">t</span><span class="l">a</span><span class="l">l</span><span class="dot">.</span></span>
+  <div class="nav-right">
+    <span class="nav-for"><img class="wm" src="hypr-wordmark.png" alt="HYPR Digital Marketing"><span>For HYPR</span></span>
+    <a class="nav-cta" data-cta href="#">Book the decision call</a>
+  </div>
+</header>
+<div class="progress" id="progress"></div>
+
+<div class="deck" id="deck">
+
+  <!-- 1 COVER -->
+  <section class="slide glow center" data-title="Cover">
+    <div class="wrap cover">
+      <div class="lockup reveal"><div class="mk">did<span class="dot">.</span></div><span class="x">×</span><img class="wm" src="hypr-wordmark.png" alt="HYPR Digital Marketing"></div>
+      <p class="eyebrow reveal">LinkedIn Outbound · Prepared for HYPR Digital Marketing</p>
+      <h1 class="grad reveal">Discovery calls every week, not whenever the next referral&nbsp;lands<span class="stop">.</span></h1>
+      <p class="lead reveal">LinkedIn outbound run in Pritpal's name, from a profile rebuilt around the e-com brands HYPR wants more of. We find the right founders, start the conversations, qualify the decision maker and book the call. Jay closes.</p>
+      <div class="cover-bullets reveal"><span>Positioning and graphics rebuilt</span><span>Named target list</span><span>Warm and cold sequences</span><span>Calls booked into Jay's calendar</span><span>Small retainer, 50% of the first invoice</span></div>
+      <p class="cover-meta reveal">Prepared for <b>Pritpal Bhachu, HYPR Digital Marketing</b><br>Prepared by <b>Nas Vou, Do It Digital</b> · 24 September 2026</p>
+      <div class="hero-cta reveal"><button class="ghostbtn" data-goto="1">Read the proposal</button><button class="ghostbtn" data-goto="9">Go to the investment</button></div>
+    </div>
+  </section>
+
+  <!-- 2 THE SITUATION -->
+  <section class="slide ink" data-title="The situation">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">02</span>The situation</p>
+      <h2 class="sec-head grad reveal">The close rate is not the problem. The number of discovery calls is<span class="stop">.</span></h2>
+      <div class="diag">
+        <div class="dlist reveal">
+          <div class="dl"><span class="k">01</span><b>How HYPR wins work today</b><p>Referrals from your network and from clients you have delivered for. Warm and high-converting, and in your own words, not sustainable. They arrive when they arrive.</p></div>
+          <div class="dl"><span class="k">02</span><b>What has been tried</b><p>Conferences in London, China, Dubai and Bucharest, at a cost you would rather have in the business now. Lead-gen agencies on retainer that produced one lead here and there. Both are being wound down.</p></div>
+          <div class="dl"><span class="k">03</span><b>What is running now</b><p>Cold email brought in-house: lists bought, around thirty inboxes warmed, live for about a month and not yet compounding. Your own LinkedIn presence, building, with reach still low.</p></div>
+          <div class="dl"><span class="k">04</span><b>What happens once someone is in the room</b><p>A free discovery call with a competitor breakdown and a roadmap. More than half sign. The bigger clients you have signed have stayed for one to two years.</p></div>
+          <div class="dl"><span class="k">05</span><b>The actual constraint</b><p>Nobody owns the front of the funnel full time. Pritpal gets people in front of Jay in between running operations. The delivery side is built to scale five to ten times. The calendar is the bottleneck.</p></div>
+        </div>
+        <div class="reveal">
+          <div class="prob">
+            <div class="card"><div class="k">Where the calls come from today</div><h4>Warm and unpredictable</h4><p>Referrals, the network, the odd partner. Good months and quiet months, and no way to turn the tap.</p></div>
+            <div class="card"><div class="k">Where the buyers already are</div><h4>On LinkedIn, by name</h4><p>Founders and owners of e-com brands at USD 1M to 5M are identifiable by title, sector and company size, and reachable for the price of a connection request. Most have never heard of HYPR.</p></div>
+          </div>
+          <div class="note" style="margin-top:14px"><b>What needs to happen</b> A profile that converts the click. A named list of the right accounts. Conversations started and followed up in Pritpal's voice every working day. Decision makers qualified and booked into Jay's calendar, with the pipeline visible to you every week.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 THE 12-WEEK OUTCOME -->
+  <section class="slide" data-title="The 12-week outcome">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">03</span>The 12-week outcome</p>
+      <h2 class="sec-head grad reveal">A booked-call system that runs whether or not a referral shows&nbsp;up<span class="stop">.</span></h2>
+      <div class="outc">
+        <div class="reveal">
+          <div class="blocklbl">By week 12, you will have</div>
+          <ol class="outs">
+            <li><b>A positioned profile</b><span>Headline, about and featured rewritten around e-com brands that need organic visibility, with a new banner and featured cards in HYPR's brand.</span></li>
+            <li><b>A named target list</b><span>E-com D2C founders and owners at USD 1M to 5M, the sweet spot you named. Then fitness, beauty and B2B brands. Decision makers only.</span></li>
+            <li><b>Three sequences running</b><span>Warm, to people who engage or already sit in the network. Cold, to the list. Re-engagement, for everyone who went quiet. All in Pritpal's voice.</span></li>
+            <li><b>Calls in Jay's calendar</b><span>Every booked call handed over in Slack with the thread, the brand, the decision maker and what they asked for.</span></li>
+            <li><b>A weekly pipeline report</b><span>Requests, acceptances, replies, conversations and calls booked, plus your feedback on fit, so the targeting sharpens every week.</span></li>
+            <li><b>An attribution ledger</b><span>Every signed client traced to the conversation or introduction that started it. That is what the 50% is calculated on.</span></li>
+          </ol>
+          <div class="note"><b>Honest line</b> We control the list, the messaging and the daily activity. We do not control who signs, and no number of calls or clients is promised.</div>
+        </div>
+        <div class="reveal">
+          <div class="blocklbl">Real screens from our client portal and profile tool. Hover to enlarge</div>
+          <div class="pgrid">
+            <figure class="browser card zm zl zt"><img class="zoom" src="clients/profile-tool.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>profile.doitdigital.agency</span></div><img src="clients/profile-tool.png" alt="Free AI LinkedIn Profile Optimizer"><figcaption><b>Week one, the score.</b> Pritpal's profile scored before the rewrite, so the difference is measurable.</figcaption></figure>
+            <figure class="browser card zm zr zt"><img class="zoom" src="shots/portal-profile.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · profile rebuild</span></div><img src="shots/portal-profile.png" alt="Portal, profile rebuild with before and after"><figcaption><b>Week two, the rewrite.</b> Headline, about, banner and featured, approved section by section before anything goes live.</figcaption></figure>
+            <figure class="browser card zm zl zb"><img class="zoom" src="shots/portal-reporting.png" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>portal · reporting</span></div><img src="shots/portal-reporting.png" alt="Portal, outbound performance reporting"><figcaption><b>Every week, the numbers.</b> Connection requests, acceptances, replies, meetings booked.</figcaption></figure>
+            <figure class="browser card zm zr zb"><img class="zoom" src="clients/slack-win.webp" alt="" aria-hidden="true"><div class="bbar"><i></i><i></i><i></i><span>client slack · shared channel</span></div><img src="clients/slack-win.webp" alt="A client Slack channel reporting a win"><figcaption><b>Every call, in Slack.</b> A real client channel. Handovers, questions and wins live in one place.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 THE SYSTEM -->
+  <section class="slide" data-title="The system">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">04</span>The system</p>
+      <h2 class="sec-head grad reveal">Four layers. One job: the right founder in Jay's calendar<span class="stop">.</span></h2>
+      <div class="col4">
+        <div class="blk card reveal"><div class="k">Layer 1</div><h3>Positioning</h3><p>Every message we send leads to the profile. It has to convert the click.</p><ul class="v8list"><li>Headline, about and experience rewritten for the buyer</li><li>Banner and featured cards designed in HYPR's brand</li><li>Case studies turned into one-screen proof</li><li>Approved section by section in the portal</li></ul></div>
+        <div class="blk card reveal"><div class="k">Layer 2</div><h3>The list</h3><p>Named accounts, decision makers only, built in Sales Navigator and checked by hand.</p><ul class="v8list"><li>E-com D2C at USD 1M to 5M revenue</li><li>Founder, owner, CEO and CMO titles</li><li>Fitness, beauty, wine, home and medical, then B2B brand awareness</li><li>Refreshed every cycle from your feedback on fit</li></ul></div>
+        <div class="blk card reveal"><div class="k">Layer 3</div><h3>Sequences</h3><p>Warm first, then cold, all written in Pritpal's voice and approved before they run.</p><ul class="v8list"><li><strong>Warm.</strong> Engagers, profile viewers, the existing network, past conversations</li><li><strong>Cold.</strong> Connection request, opener, proof, ask</li><li>Never a pitch in message one</li><li>Connection requests at the account's limit</li></ul></div>
+        <div class="blk card reveal"><div class="k">Layer 4</div><h3>Handover</h3><p>Qualified, then booked. Nothing lands in Jay's calendar that has not been checked.</p><ul class="v8list"><li>Inbox managed every working day</li><li>Decision maker on marketing spend confirmed</li><li>Call booked into Jay's calendar, Slack post with the thread</li><li>Weekly pipeline report and your feedback loop</li></ul><p><strong style="color:var(--fg)">Positioning earns the reply. Outbound goes and gets it.</strong></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 POSITIONING AND GRAPHICS -->
+  <section class="slide" data-title="Positioning and graphics">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">05</span>Positioning and graphics</p>
+      <h2 class="sec-head grad reveal">Before anyone replies, they look at the profile. We rebuild it around the buyer<span class="stop">.</span></h2>
+      <div class="pos">
+        <div class="reveal">
+          <div class="prof card">
+            <div class="banner"><div class="lg"><img src="hypr-wordmark.png" alt="HYPR"></div><div class="hl">Organic traffic that <i>stays</i> when the ads stop.</div><div class="sub">Content for e-com and consumer brands, published on 300+ sites.</div><div class="bstrip">Fitness · Beauty · Wine · Medical · B2B</div></div>
+            <span class="tag">Mock-up · direction for week one</span>
+            <div class="head"><div class="av">PB</div><div class="nm">Pritpal Bhachu <i>· 1st</i></div><div class="hd">Organic traffic for e-com brands doing USD 1M to 5M · Articles, video and podcasts published on 300+ sites · Traffic that stays when the ads stop · Director, HYPR Digital Marketing</div><div class="meta">London, United Kingdom · Contact info</div><div class="btns"><span class="p">Message</span><span>Book a discovery call</span></div></div>
+            <div class="feat"><div class="fk">Featured</div><div class="fcards">
+              <div class="fc"><div class="im">Fitness brand, 12 months</div><div class="cap">Blog from 221 to 50K visits a month. 23.5K new keywords.</div></div>
+              <div class="fc"><div class="im c">What HYPR does, on one page</div><div class="cap">Find the topics, create every format, distribute to 300+ sites.</div></div>
+              <div class="fc"><div class="im w">Book a discovery call</div><div class="cap">A competitor breakdown and a roadmap, free, with Jay.</div></div>
+            </div></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="blocklbl">What we redo, and why</div>
+          <ul class="redo">
+            <li><span class="ic">01</span><b>Headline and about</b><span>Written for the buyer, not the industry. Who it is for, what changes for them, and the proof, in that order.</span></li>
+            <li><span class="ic">02</span><b>Featured section</b><span>The case studies you already have, turned into 1200 by 627 cards people open. In your words, the PDFs are not getting read.</span></li>
+            <li><span class="ic">03</span><b>Banner</b><span>1584 by 396, in HYPR's brand. One line that says what you do and for whom, with the 300-site distribution as the proof.</span></li>
+            <li><span class="ic">04</span><b>Experience and services</b><span>Aligned to the same positioning so the whole profile reads as one story and one offer.</span></li>
+            <li><span class="ic">05</span><b>Sign-off</b><span>Every section approved by Pritpal in the portal before it goes live. Nothing changes on the profile without a yes.</span></li>
+          </ul>
+          <div class="today"><b>The headline today</b><q>Driving Organic Traffic Growth for Brands | 61.5x ROI | 20,000% Traffic Growth | No Paid Ads | On and Off-Site Multi-Format Content + Distribution</q><br>Strong proof, but no buyer is named. An e-com founder has no reason to think it is about them.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 THE CONVERSATION -->
+  <section class="slide" data-title="The conversation">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">06</span>The conversation</p>
+      <h2 class="sec-head grad reveal">Five touches. Each one earns the next. No pitch in message&nbsp;one<span class="stop">.</span></h2>
+      <p class="sec-lead reveal">In Pritpal's voice, approved before it runs. Click a touch to read it.</p>
+      <div class="track reveal"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="stages reveal" role="tablist">
+        <button class="stg active" data-stage="0" role="tab"><span class="k">01 · Day 0</span><b>The request</b><small>A connection request to a named founder on the list</small><em>Job: get accepted by the right people</em></button>
+        <button class="stg" data-stage="1" role="tab"><span class="k">02 · Day 1 to 2</span><b>The opener</b><small>One real observation about their brand, one easy question</small><em>Job: start a real conversation</em></button>
+        <button class="stg" data-stage="2" role="tab"><span class="k">03 · Day 4 to 6</span><b>The proof</b><small>A client result they can read in ten seconds</small><em>Job: make the outcome concrete</em></button>
+        <button class="stg" data-stage="3" role="tab"><span class="k">04 · Day 9 to 12</span><b>The ask</b><small>The free competitor breakdown Jay already runs</small><em>Job: book a qualified call</em></button>
+        <button class="stg" data-stage="4" role="tab"><span class="k">05 · Day 20 on</span><b>Re-engagement</b><small>A new angle for everyone who went quiet</small><em>Job: keep the door open</em></button>
+      </div>
+      <div class="stagepanel seq card reveal">
+        <div class="dmmock">
+          <div class="dm-head"><div class="dm-av">D</div><div class="dm-who"><b>Dana</b><span>Founder, home fitness brand · example account</span></div></div>
+          <div class="dm-thread" id="sq-thread"></div>
+          <div class="dm-note">Example messages, written to show the shape. The live sequences are written with Pritpal in week two and approved before anything is sent.</div>
+        </div>
+        <div class="stageinfo">
+          <div class="k" id="sq-k"></div>
+          <h3 id="sq-title"></h3>
+          <div class="si"><b>Format</b><p id="sq-fmt"></p></div>
+          <div class="si"><b>Job</b><p id="sq-job"></p></div>
+          <div class="si"><b>The ask</b><p id="sq-ask"></p></div>
+          <div class="si"><b>Then</b><p id="sq-then"></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 PROOF -->
+  <section class="slide" data-title="How we have helped others">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">07</span>How we have helped others</p>
+      <h2 class="sec-head grad reveal oneline">Two clients, 66 meetings booked<span class="stop">.</span></h2>
+      <p class="sec-lead reveal">Results from our outbound systems, shown so you can see how we work with clients. The first is Harry Phokou, who pointed you our way, in his own words, on video.</p>
+      <div class="proof3 two">
+        <div class="pc card reveal">
+          <button class="vposter" type="button" data-yt="OMitGLVVAwU" aria-label="Play Harry Phokou's testimonial"><img src="clients/hivemind-poster.webp" alt="Harry Phokou, founder of Hivemind"><span class="vplay"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5.5v13l11-6.5z"/></svg></span></button>
+          <div class="body"><div class="k">Same avatar · agency founder</div><h3>Hivemind Marketing, 120 days on LinkedIn</h3><p>A marketing agency founder with credibility and no consistent channel. Profile rebuilt, list built, conversations run every week.</p>
+            <div class="metrics"><div class="metric"><div class="mv">37</div><div class="ml">Meetings booked</div></div><div class="metric"><div class="mv">4</div><div class="ml">Clients signed</div></div><div class="metric"><div class="mv">7K</div><div class="ml">MRR added</div></div></div></div>
+        </div>
+        <div class="pc card reveal">
+          <div class="body"><div class="k">Receipts · recruitment founder</div><h3>29 meetings, two deals closed won, $60K in the CRM</h3><p>Ten years on referrals, no system. Profile rebuilt, ideal client defined, conversations run every week. The client's own Slack and CRM:</p>
+            <div class="receipts" style="margin-top:12px"><img src="clients/slack-win.webp" alt="Client Slack: a candidate accepted an offer and a contract moved to signing"><img src="clients/crm-closed.webp" alt="Client CRM: two deals closed won"></div></div>
+        </div>
+      </div>
+      <div class="qstrip reveal">
+        <div class="qs"><img src="clients/matias-sanchez.jpeg" alt="">"Rebuilt everything: our profile, our messaging, and the entire outbound engine, and delivered a steady stream of qualified conversations."<b>Matias Sanchez Elsner, MD, DICO</b></div>
+        <div class="qs"><img src="clients/alvin-narsey.webp" alt="">"A standout when it comes to LinkedIn outreach and client acquisition. Someone you want in your corner."<b>Alvin Narsey, Business Coach for Retailers</b></div>
+        <div class="qs"><img src="clients/harry-phokou.png" alt="">"I didn't know how good I could have it. I've done outbound now, I can't go back."<b>Harry Phokou, Founder, Hivemind</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 THE 12-WEEK PLAN -->
+  <section class="slide" data-title="The 12-week plan">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">08</span>The 12-week plan</p>
+      <h2 class="sec-head grad reveal">Position first, then list, then volume<span class="stop">.</span></h2>
+      <div class="timeline reveal">
+        <div class="tk"><span style="--p:8%"></span><span style="--p:25%"></span><span style="--p:42%"></span><span style="--p:58%"></span><span style="--p:75%"></span><span style="--p:92%"></span></div>
+        <div class="tcards">
+          <div class="tc"><div class="k">Week 1</div><b>Install</b><ul><li>Strategy call</li><li>ICP and list criteria agreed</li><li>Profile scored and audited</li><li>Headline, about and featured drafted</li><li>Banner and cards briefed</li><li>Slack channel and calendar link set up</li></ul></div>
+          <div class="tc"><div class="k">Week 2</div><b>Foundation</b><ul><li>Profile and graphics approved and live</li><li>Target list built and approved</li><li>Sequences written in Pritpal's voice</li><li>Warm list assembled from engagers and the network</li></ul></div>
+          <div class="tc"><div class="k">Week 3</div><b>Live</b><ul><li>Connection requests begin at the account's limit</li><li>Warm sequences start</li><li>Inbox managed every working day</li><li>First replies handled</li></ul></div>
+          <div class="tc"><div class="k">Week 4</div><b>Rhythm</b><ul><li>Cold sequences at full volume</li><li>First calls booked and handed over</li><li>First weekly report</li><li>Your feedback on fit, list refined</li></ul></div>
+          <div class="tc m"><div class="k">Weeks 5 to 8</div><b>Iterate</b><ul><li>Messaging revised on reply data</li><li>Second segment: fitness, beauty, B2B brand awareness</li><li>Re-engagement sequence live</li><li>First attributed clients logged as Jay signs</li></ul></div>
+          <div class="tc m"><div class="k">Weeks 9 to 12</div><b>Scale and decide</b><ul><li>Volume on what books</li><li>Playbook documented</li><li>Attribution ledger reconciled</li><li>Cycle-four decision</li></ul></div>
+        </div>
+      </div>
+      <div class="decide dark reveal"><b>Week 12 · Decide</b><span>Keep the system running, add cold email on the inboxes you have already warmed, or add founder content so the outbound lands on a feed that is already talking to the buyer.</span></div>
+    </div>
+  </section>
+
+  <!-- 9 THE MATHS -->
+  <section class="slide" data-title="The maths">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">09</span>The maths</p>
+      <h2 class="sec-head grad reveal">Your numbers, your maths<span class="stop">.</span></h2>
+      <p class="sec-lead reveal">Put in what a client is worth to HYPR each month, how long they stay, how many discovery calls the outbound books in 12 weeks, and Jay's close rate. The retainer and the 50% fall out of that.</p>
+      <div class="roi">
+        <div class="roi-in card reveal">
+          <div class="feeline"><b>GBP 1,100</b><i>every 28 days, three cycles</i><span>+</span><b>50% of the first invoice</b><i>per client signed, no cap</i></div>
+          <div class="ctl">
+            <label for="r-inst"><span>Average client value per month (USD)</span><output id="o-inst">USD 4,500</output></label>
+            <input type="range" id="r-inst" min="1000" max="20000" step="250" value="4500">
+          </div>
+          <div class="ctl">
+            <label for="r-len"><span>Average client stays</span><output id="o-len">12 months</output></label>
+            <input type="range" id="r-len" min="3" max="36" step="1" value="12">
+          </div>
+          <div class="ctl">
+            <label for="r-dem"><span>Discovery calls booked in 12 weeks</span><output id="o-dem">12</output></label>
+            <input type="range" id="r-dem" min="0" max="40" step="1" value="12">
+          </div>
+          <div class="ctl">
+            <label for="r-cr"><span>Close rate on a discovery call</span><output id="o-cr">40%</output></label>
+            <input type="range" id="r-cr" min="10" max="80" step="5" value="40">
+          </div>
+        </div>
+        <div class="roi-out card reveal">
+          <div class="k" id="o-against">Against a 12-week retainer of GBP 3,300</div>
+          <div class="hero">
+            <div class="hv" id="o-mult">4x</div>
+            <div class="hl" id="o-hero"></div>
+          </div>
+          <div class="roi-grid six">
+            <div class="roi-cell"><div class="cv" id="o-cli">4.8</div><div class="cl">Clients expected</div></div>
+            <div class="roi-cell"><div class="cv sm" id="o-cv">USD 259,200</div><div class="cl">Contract value</div></div>
+            <div class="roi-cell"><div class="cv sm" id="o-kept">USD 244,000</div><div class="cl">Kept by HYPR</div></div>
+            <div class="roi-cell"><div class="cv sm" id="o-fee">USD 10,800</div><div class="cl">Success fees to did.</div></div>
+            <div class="roi-cell"><div class="cv sm" id="o-cpc">GBP 275</div><div class="cl">Retainer per call booked</div></div>
+            <div class="roi-cell"><div class="cv sm" id="o-be">1 client, 2 months</div><div class="cl">Pays back everything</div></div>
+          </div>
+          <div class="foot" id="o-foot"></div>
+        </div>
+      </div>
+      <details class="assump reveal">
+        <summary><span class="k">Assumptions behind the numbers</span><span class="tog">Show</span></summary>
+        <ul>
+          <li><b>Retainer</b> GBP 1,100 every 28 days for three cycles, GBP 3,300 in total, counted here as USD 4,400 at an indicative 1.33. Tooling at cost, excluded.</li>
+          <li><b>Success fee</b> 50% of the first invoice of every client attributed to a conversation we ran or an introduction we made, counted here as one month of the client's package.</li>
+          <li><b>Client value and tenure</b> Your figures. You told us the sweet spot is USD 3,000 to 6,000 a month and the bigger clients have stayed one to two years. Value is monthly package times months stayed, gross.</li>
+          <li><b>Calls and close rate</b> Discovery calls that start as a LinkedIn conversation we ran. You said more than half sign, so 40% is the conservative default.</li>
+          <li><b>Not counted</b> Referrals from new clients, introductions from our network, or anything after the months entered. A planning estimate, not a forecast.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- 10 INVESTMENT -->
+  <section class="slide ink" data-title="Investment and risk reversal">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">10</span>Investment and risk reversal</p>
+      <h2 class="sec-head grad reveal oneline">One package. Billed every 28 days. Paid mostly when Jay signs<span class="stop">.</span></h2>
+      <div class="inv1">
+        <div class="rec card reveal">
+          <div class="k">LinkedIn Outbound · positioned</div>
+          <div class="prices">
+            <div class="big">GBP 1,100<span>every 28 days</span><small>The retainer. Covers the people, the list and the daily work.</small></div>
+            <div class="plus">+</div>
+            <div class="big">50%<span>of the first invoice</span><small>Of every client you sign from a conversation we ran or an introduction we made.</small></div>
+          </div>
+          <div class="nocap"><span>No cap on the fee</span><span>No cap on the number of clients</span><span>No cap on the calls we book</span></div>
+          <div class="tl2">Retainer paid in advance each cycle. Three cycles to start (12 weeks), then cycle to cycle with 28 days' notice. The 50% falls due when the client's first invoice is paid, on any client whose first contact we logged at handover.</div>
+          <ul class="inc"><li>Headline, about and featured rewritten</li><li>Banner and featured cards, HYPR's brand</li><li>Named target list, decision makers only</li><li>Connection requests at the account limit</li><li>Warm sequences to engagers and viewers</li><li>Cold and re-engagement sequences</li><li>Inbox managed every working day</li><li>Qualified calls booked into Jay's calendar</li><li>Slack channel, weekly report, ledger</li><li>Sales Navigator and tooling at cost</li></ul>
+          <div class="why"><b>Twelve weeks</b> positions the profile, runs the list through three full sequences and shows what books. The week-12 decision is made on data, not on a feeling.</div>
+        </div>
+        <div class="tcol reveal">
+          <div class="bd"><b>Delivery</b>If we miss an agreed deliverable because of our team, we make it up at no additional cost. If approvals or inputs are delayed, the timeline moves accordingly.</div>
+          <div class="bd"><b>Voice</b>If a message does not sound like Pritpal during the first cycle, we rewrite it until it does. Nothing is sent from a template he has not approved.</div>
+          <div class="bd"><b>Assets</b>You own these from day one: the profile rewrite, the banner and card files, the target list, the sequences, the reports and the attribution ledger.</div>
+          <div class="bd"><b>Measurement</b>We report the activity and pipeline signals we can observe. We do not claim revenue that cannot be attributed. There is no results guarantee, and both sides earn more only when Jay signs.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 NEXT STEPS -->
+  <section class="slide glow center close" data-title="Next steps">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="n">11</span>Next steps</p>
+      <h2 class="reveal">Decide whether the front of your funnel gets an owner for the next 12 weeks<span class="stop">.</span></h2>
+      <div class="closegrid">
+        <div class="cg card reveal"><div class="k">On the decision call</div><h3>We will</h3><ol><li>Confirm the ideal client and the first list segment</li><li>Agree the positioning direction and the headline</li><li>Replace the planning assumptions with your numbers</li><li>Agree how attribution is logged and when the 50% falls due</li><li>Set up the Slack channel and the calendar link</li><li>Confirm Pritpal's approval process for messages</li><li>Answer the commercial and operational questions</li></ol></div>
+        <div class="cg card reveal"><div class="k">After a yes</div><h3>The first four weeks</h3><ol><li>Strategy call within seven days</li><li>Profile and graphics drafted in week one, live by week two</li><li>List and sequences approved in week two</li><li>Connection requests and warm sequences from week three</li><li>First weekly pipeline report at the end of week four</li></ol></div>
+      </div>
+      <p class="the-decision reveal"><b>The decision.</b> You have the case studies, the close rate and the capacity to scale. The question is whether the front of the funnel keeps depending on who Pritpal already knows, or gets a system that runs every working day and is paid mostly when Jay signs.</p>
+      <div class="reveal" style="display:flex;justify-content:center;margin-top:24px"><a class="pillbtn" data-cta href="#">Book the decision call</a></div>
+      <div class="closebar reveal"><div class="mk">did<span class="dot">.</span></div><div class="links"><a data-cta href="#">Book the decision call</a><a href="mailto:admin@doitdigital.agency">admin@doitdigital.agency</a><span class="muted">doitdigital.agency</span></div></div>
+      <p class="fine reveal">LinkedIn Outbound · Prepared for Pritpal Bhachu, HYPR Digital Marketing · Prepared by Do It Digital · 24 September 2026 · © 2026 Do It Digital.</p>
+    </div>
+  </section>
+</div>
+
+<div class="controls">
+  <button class="ctrl-btn" id="prevBtn" aria-label="Previous"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <div class="counter" id="counter">1 / 11</div>
+  <button class="ctrl-btn" id="nextBtn" aria-label="Next"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div>
+<div class="kb-hint"><kbd>&larr;</kbd><kbd>&rarr;</kbd> navigate · <kbd>F</kbd> fullscreen</div>
+
+<script>
+  const CTA_HREF = 'https://calendly.com/do-it-digital';
+  document.querySelectorAll('[data-cta]').forEach(a => a.setAttribute('href', CTA_HREF));
+
+  const slides = document.querySelectorAll('.slide');
+  const counter = document.getElementById('counter');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const progress = document.getElementById('progress');
+  let current = 0;
+
+  slides.forEach(s => s.querySelectorAll('.reveal').forEach((el, i) => el.style.setProperty('--rd', (i * 70) + 'ms')));
+
+  function show(i){
+    current = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === current));
+    counter.textContent = `${current + 1} / ${slides.length}`;
+    progress.style.width = `${((current + 1) / slides.length) * 100}%`;
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === slides.length - 1;
+    slides[current].scrollTop = 0;
+    tracker.onSlide(current);
+  }
+  const next = () => show(current + 1);
+  const prev = () => show(current - 1);
+
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => show(parseInt(b.dataset.goto, 10))));
+  document.addEventListener('keydown', e => {
+    if(e.target && e.target.tagName === 'INPUT') return; /* let the sliders own the arrow keys */
+    if(e.key === 'ArrowRight' || e.key === ' '){ e.preventDefault(); next(); }
+    if(e.key === 'ArrowLeft'){ e.preventDefault(); prev(); }
+    if(e.key === 'f' || e.key === 'F'){ document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); }
+  });
+  let tsx = 0, tsTarget = null;
+  document.addEventListener('touchstart', e => { tsx = e.touches[0].clientX; tsTarget = e.target; }, {passive:true});
+  document.addEventListener('touchend', e => {
+    if(tsTarget && tsTarget.tagName === 'INPUT') return;
+    const dx = e.changedTouches[0].clientX - tsx;
+    if(dx > 50) prev();
+    if(dx < -50) next();
+  });
+
+  /* Fit: the deck is laid out at 1920x1080 and scaled to the window. Below 900px wide it falls back to the responsive layout. */
+  const QA = new URLSearchParams(location.search).get('qa') === '1';
+  (() => {
+    const deck = document.getElementById('deck');
+    const fit = () => {
+      if(QA){ document.body.classList.add('staged'); deck.style.setProperty('--z', 1); return; }
+      const w = window.innerWidth, h = window.innerHeight, on = w >= 900;
+      document.body.classList.toggle('staged', on);
+      if (on) deck.style.setProperty('--z', Math.min(w / 1920, h / 1080)); else deck.style.removeProperty('--z');
+    };
+    fit(); window.addEventListener('resize', fit);
+  })();
+
+  /* The conversation: five touches drive the DM thread mock */
+  (() => {
+    const me = (t, card) => ({ who: 'Pritpal', me: true, t, card });
+    const them = t => ({ who: 'Dana', me: false, t });
+    const CARD = '<div class="dm-card"><div class="im">Fitness brand, 12 months</div><div class="t">Blog from 221 to 50K visits a month. 23.5K new keywords. A fraction of the ad budget.</div></div>';
+    const stages = [
+      { k: '01 · Day 0 · The request', title: 'A connection request to a named founder on the list',
+        thread: [ me('Hi Dana, your range came up while I was looking at how home-fitness brands rank against Peloton and NordicTrack. I work on organic traffic for e-com brands. Good to connect.') ],
+        fmt: 'A short note, or no note at all. We test both and keep whichever gets the higher acceptance rate from the right people.', job: 'Get accepted by the founders and owners on the list, at the account\'s daily limit.', ask: 'None.', then: 'Accepted: the opener goes out within two days. Not accepted: they wait for the next cycle.' },
+      { k: '02 · Day 1 to 2 · The opener', title: 'One real observation about their brand, one easy question',
+        thread: [ me('Thanks for connecting, Dana. Quick one, no pitch. I had a look at the site before sending the request: strong on paid, and the blog has a dozen posts that do not rank for anything a buyer would type. That is usually the cheapest traffic a brand your size is leaving on the table.\n\nRoughly how much of your traffic is paid at the moment?'), them('Most of it, honestly. Organic is maybe 15%.') ],
+        fmt: 'One message. Something we actually looked at, then a question they can answer in one line.', job: 'Start a conversation about their situation, not ours.', ask: 'A one-line answer.', then: 'A reply moves them to the proof. Silence moves them to re-engagement in three weeks.' },
+      { k: '03 · Day 4 to 6 · The proof', title: 'A client result they can read in ten seconds',
+        thread: [ me('That is where most brands your size sit. One of our fitness clients was there 12 months ago: the blog did 221 visits a month. It now does 50K a month and ranks for 23,500 search terms it never ranked for before, on a fraction of the ad spend. The short version is below.', CARD) ],
+        fmt: 'The featured card from the profile, dropped into the thread. Real numbers from a real client, never a deck.', job: 'Make the outcome concrete before anyone asks for anything.', ask: 'None yet. Let them read.', then: 'Any reaction, even a like, moves them to the ask.' },
+      { k: '04 · Day 9 to 12 · The ask', title: 'The free competitor breakdown Jay already runs',
+        thread: [ me('Dana, would it be useful if we ran a competitor breakdown for your brand? Jay does these on a 45-minute call: where Peloton and NordicTrack take their traffic from, what you could realistically take back, and a roadmap. No charge and no obligation.\n\nAre you the right person for marketing spend, or should someone else join?'), them('Yes, that would be useful. It is me and my co-founder. Send me some times.'), me('Great. Here is Jay\'s calendar. I will send a short note beforehand so nothing on the call is wasted.') ],
+        fmt: 'The discovery call you already give away, framed as the breakdown it is. The decision maker is confirmed before anything is booked.', job: 'Book a qualified call.', ask: 'A time in Jay\'s calendar.', then: 'Booked: a Slack post with the thread, the brand, the decision maker and what they asked for. Jay walks in briefed.' },
+      { k: '05 · Day 20 onwards · Re-engagement', title: 'A new angle for everyone who went quiet',
+        thread: [ me('Dana, one thing that may be relevant. Since Google started de-indexing AI-written content, three of the brands that came to us had lost around 60% of their organic traffic. Human-edited content is what survives it.\n\nIf organic is on the list for next quarter, happy to send over what we would look at first.') ],
+        fmt: 'A different angle every three to four weeks for people who did not reply. Never the same message twice.', job: 'Keep the door open without pestering.', ask: 'A soft one. Then they rest until the next cycle.', then: 'Every reply, whenever it comes, is handled the same day and logged in the weekly report.' },
+    ];
+    const btns = document.querySelectorAll('.stg');
+    const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+    const set = i => {
+      const st = stages[i];
+      btns.forEach((b, j) => b.classList.toggle('active', j === i));
+      document.getElementById('sq-k').textContent = st.k;
+      document.getElementById('sq-title').textContent = st.title;
+      document.getElementById('sq-fmt').textContent = st.fmt;
+      document.getElementById('sq-job').textContent = st.job;
+      document.getElementById('sq-ask').textContent = st.ask;
+      document.getElementById('sq-then').textContent = st.then;
+      document.getElementById('sq-thread').innerHTML = st.thread.map(m => `<div class="dm${m.me ? ' me' : ''}"><span class="who">${m.who}</span>${esc(m.t)}${m.card || ''}</div>`).join('');
+    };
+    btns.forEach(b => b.addEventListener('click', () => set(+b.dataset.stage)));
+    set(0);
+  })();
+
+  /* The maths: retainer plus 50% of the first invoice, from the prospect's own inputs */
+  (() => {
+    const RET_GBP = 3300, RET_USD = 4400;
+    const $ = id => document.getElementById(id);
+    const val = $('r-inst'), len = $('r-len'), dem = $('r-dem'), cr = $('r-cr');
+    if(!val) return;
+    const usd = n => 'USD ' + Math.round(n).toLocaleString('en-US');
+    const gbp = n => 'GBP ' + Math.round(n).toLocaleString('en-US');
+    const paint = el => el.style.setProperty('--pct', ((el.value - el.min) / (el.max - el.min) * 100) + '%');
+    const words = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen'];
+    const one = n => n.toFixed(1).replace(/\.0$/, '');
+    function calc(){
+      const v = +val.value, m = +len.value, calls = +dem.value, rate = +cr.value / 100;
+      const c = calls * rate, cv = v * m * c, fee = 0.5 * v * c, paid = RET_USD + fee, kept = cv - fee;
+      const mult = paid > 0 ? cv / paid : 0;
+      const beMonths = Math.ceil(RET_USD / v + 0.5);
+      $('o-inst').textContent = usd(v);
+      $('o-len').textContent = m + (m === 1 ? ' month' : ' months');
+      $('o-dem').textContent = calls;
+      $('o-cr').textContent = Math.round(rate * 100) + '%';
+      $('o-against').textContent = 'Against a 12-week retainer of ' + gbp(RET_GBP) + ', about ' + usd(RET_USD);
+      $('o-cli').textContent = one(c);
+      $('o-mult').textContent = c === 0 ? '0x' : (mult >= 10 ? Math.round(mult) : mult.toFixed(1).replace(/\.0$/, '')) + 'x';
+      $('o-cv').textContent = usd(cv);
+      $('o-kept').textContent = usd(Math.max(0, kept));
+      $('o-fee').textContent = usd(fee);
+      $('o-cpc').textContent = calls === 0 ? 'n/a' : gbp(RET_GBP / calls);
+      $('o-be').textContent = beMonths <= m ? '1 client, ' + beMonths + (beMonths === 1 ? ' month' : ' months') : Math.ceil(RET_USD / (v * Math.max(0.5, m - 0.5))) + ' clients';
+      $('o-hero').textContent = calls === 0
+        ? 'With no calls booked the system has cost ' + gbp(RET_GBP) + ' and nothing else is owed. One client at ' + usd(v) + ' a month covers it in ' + beMonths + (beMonths === 1 ? ' month.' : ' months.')
+        : (calls <= 15 ? words[calls] : calls) + (calls === 1 ? ' call' : ' calls') + ' at a ' + Math.round(rate * 100) + '% close is about ' + one(c) + (c === 1 ? ' client' : ' clients') + '. At ' + usd(v) + ' a month for ' + m + ' months, that is ' + usd(cv) + ' in contract value. You pay us ' + usd(paid) + ' in total, ' + usd(fee) + ' of it only after Jay signs.';
+      $('o-foot').textContent = 'Contract value divided by everything paid to us, retainer and success fees together. ' + (beMonths <= m
+        ? 'One client staying ' + beMonths + (beMonths === 1 ? ' month' : ' months') + ' covers the retainer and its own fee. Everything after that is return.'
+        : 'Break-even needs more than one client at this value and tenure.');
+      [val, len, dem, cr].forEach(paint);
+    }
+    [val, len, dem, cr].forEach(el => el.addEventListener('input', calc));
+    calc();
+  })();
+
+  /* Video testimonial: poster first, YouTube loads on click */
+  document.querySelectorAll('.vposter').forEach(b => b.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + b.dataset.yt + '?autoplay=1&rel=0';
+    f.title = b.getAttribute('aria-label'); f.allow = 'autoplay; fullscreen; picture-in-picture'; f.allowFullscreen = true;
+    b.replaceWith(f);
+  }));
+
+  /* View tracking: the shared Do It Digital Apps Script collector. Tag the share link with ?v=<first name>. */
+  const TRACKING = { endpoint: 'https://script.google.com/macros/s/AKfycbwA7cVeaqvuVkfGPIAf9GeA_YriMInYIM_QSsxtV1Q8r140_wsIFidMBsLhUQFhMHvV3g/exec', proposalId: 'hypr-outbound-v1', heartbeatSec: 20, debug: false };
+  const tracker = (() => {
+    const now = () => Date.now();
+    const id = (k, store) => { try { let v = store.getItem(k); if(!v){ v = Math.random().toString(36).slice(2,10) + now().toString(36); store.setItem(k,v);} return v; } catch(e){ return 'na'; } };
+    const vid = id('did_vid', localStorage), sid = id('did_sid', sessionStorage);
+    const recipient = new URLSearchParams(location.search).get('v') || '';
+    const titles = [...slides].map(s => s.dataset.title || '');
+    const slideMs = new Array(slides.length).fill(0);
+    let cur = 0, maxS = 0, enteredAt = now(), visible = !document.hidden, exitSent = false;
+    const settle = () => { if(visible) slideMs[cur] += now() - enteredAt; enteredAt = now(); };
+    const totalSec = () => Math.round(slideMs.reduce((a,b)=>a+b,0)/1000);
+    function send(type, data){
+      if(QA) return;
+      const payload = Object.assign({ p: TRACKING.proposalId, t: type, ts: new Date().toISOString(), vid, sid, r: recipient, slide: cur+1, title: titles[cur] }, data||{});
+      if(TRACKING.debug) console.log('[track]', payload);
+      if(!TRACKING.endpoint) return;
+      try { const body = JSON.stringify(payload);
+        if(navigator.sendBeacon) navigator.sendBeacon(TRACKING.endpoint, new Blob([body], {type:'text/plain'}));
+        else fetch(TRACKING.endpoint, {method:'POST', body, keepalive:true, mode:'no-cors'});
+      } catch(e){}
+    }
+    function onSlide(i){ if(i !== cur){ settle(); send('slide_leave', { secOnSlide: Math.round(slideMs[cur]/1000) }); } cur = i; maxS = Math.max(maxS, i); enteredAt = now(); send('slide_view', {}); }
+    function exit(reason){ if(exitSent) return; exitSent = true; settle(); send('exit', { reason, exitSlide: cur+1, exitTitle: titles[cur], maxSlide: maxS+1, totalSec: totalSec(), perSlideSec: slideMs.map(ms=>Math.round(ms/1000)).join('|') }); }
+    document.addEventListener('visibilitychange', () => { if(document.hidden){ settle(); visible = false; exit('hidden'); } else { visible = true; enteredAt = now(); exitSent = false; send('return', {}); } });
+    window.addEventListener('pagehide', () => exit('pagehide'));
+    setInterval(() => { if(visible){ settle(); send('ping', { totalSec: totalSec() }); } }, TRACKING.heartbeatSec * 1000);
+    document.querySelectorAll('[data-cta], .pillbtn, .ghostbtn').forEach(a => a.addEventListener('click', () => send('cta_click', { label: a.textContent.trim(), href: a.getAttribute('href') || '' })));
+    /* ROI slider use is a strong buying signal, log it once per slider */
+    document.querySelectorAll('.roi input').forEach(el => el.addEventListener('change', () => send('roi_adjust', { input: el.id, value: el.value }), { once: true }));
+    send('open', { ref: document.referrer || '', ua: navigator.userAgent, vw: innerWidth, vh: innerHeight, lang: navigator.language });
+    return { onSlide, send };
+  })();
+
+  /* Start slide (?s=N, for review and QA renders) */
+  (() => {
+    const q = new URLSearchParams(location.search);
+    const s = parseInt(q.get('s') || '1', 10) || 1;
+    if(QA) document.documentElement.classList.add('qa');
+    show(Math.max(1, Math.min(slides.length, s)) - 1);
+    if(QA){
+      const badge = document.createElement('div');
+      badge.style.cssText = 'position:fixed;left:8px;top:70px;z-index:999;font:12px monospace;background:#ff0;color:#000;padding:4px 8px;border-radius:4px';
+      document.body.appendChild(badge);
+      const report = () => { const sl = slides[current]; const t = 'QA slide ' + (current + 1) + ' ' + sl.dataset.title + ' overflowY=' + (sl.scrollHeight - sl.clientHeight) + ' overflowX=' + (sl.scrollWidth - sl.clientWidth); document.title = t; badge.textContent = t; };
+      report();
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => setTimeout(report, 400));
+    }
+  })();
+</script>
+</body>
+</html>
