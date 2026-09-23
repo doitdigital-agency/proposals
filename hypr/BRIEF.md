@@ -20,7 +20,7 @@ HYPR case study numbers (fitness brand, from the PDF Pritpal sent): blog 221 to 
 - Folder `hypr/`, tracker proposalId `hypr-outbound-v1`, share link `?v=pritpal`.
 - Live: https://doitdigital-agency.github.io/proposals/hypr/?v=pritpal
 - Local preview: launch config `hypr` on :8797.
-- Build script: scratchpad `build-hypr.py` (reads `voice-system/index.html` for the CSS, writes this folder's index.html; rebuild overwrites index.html only). Render/QA harness: scratchpad `render.py` (Chrome here writes its output and never exits, so the harness polls and kills it; `?s=N&qa=1` shows an overflow badge).
+- Build script: `_tools/build-hypr.py` (reads `voice-system/index.html` for the CSS, writes this folder's index.html; rebuild overwrites index.html only). Render/QA harness: `_tools/render.py` (writes to the scratchpad renders folder; change `out` if needed) (Chrome here writes its output and never exits, so the harness polls and kills it; `?s=N&qa=1` shows an overflow badge).
 
 ## QA (2026-09-24)
 All 11 slides rendered at 1920x1080 with zero overflow after: outcome list tightened and image heights 172px; investment prices side by side at 48px; sector strip in the mock banner renamed `.bstrip` (a `.strip` rule already existed); conversation panel min-height 470px; footer text changed from "The Voice System" to "LinkedIn Outbound".
